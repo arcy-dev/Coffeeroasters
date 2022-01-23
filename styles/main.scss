@@ -12,8 +12,6 @@
 // Navs
 @import './theme/nav.scss';
 
-$global-link-color: #da7d02;
-
 .hero-banner {
   background-image: url(../assets/plan/desktop/image-hero-blackcup.jpg);
   background-repeat: no-repeat;
@@ -25,8 +23,30 @@ $global-link-color: #da7d02;
   border-radius: 8px;
 }
 
+/* Phone landscape and smaller */
+@media (max-width: $breakpoint-small) {
+  .hero-banner {
+    background-image: url(../assets/plan/mobile/image-hero-blackcup.jpg);
+  }
+}
+
+/* Tablet landscape and smaller */
+@media (max-width: $breakpoint-medium) {
+  .hero-banner {
+    background-image: url(../assets/plan/tablet/image-hero-blackcup.jpg);
+  }
+}
+
 #orderSummary {
   border-radius: 8px;
+  span {
+    color: $dark-cyan;
+  }
+}
+#modal-section {
+  span {
+    color: $dark-cyan;
+  }
 }
 
 // 2. Import default variables and available mixins.

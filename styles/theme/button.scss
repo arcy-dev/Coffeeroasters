@@ -3,71 +3,60 @@
 //
 // ========================================================================
 
-
 // Variables
 // ========================================================================
 
+$button-font-size: $global-small-font-size !default;
+$button-large-font-size: $global-small-font-size !default;
 
-$button-font-size:                               $global-small-font-size !default;
-$button-large-font-size:                         $global-small-font-size !default;
+$button-default-background: #0e8784 !default;
+$button-default-hover-background: #66d2cf !default;
+$button-default-active-background: transparent !default;
+$button-default-color: $light-cream;
+$button-disabled-background: transparent !default;
 
-$button-default-background:                      #0E8784 !default;
-$button-default-hover-background:                #66D2CF !default;
-$button-default-active-background:               transparent !default;
-$button-default-color:                          $light-cream;
-$button-disabled-background:                     transparent !default;
-
-$button-text-hover-color:                        $global-emphasis-color !default;
+$button-text-hover-color: $global-emphasis-color !default;
 
 //
 // New
 //
 
-$button-text-transform:                          none;
+$button-text-transform: none;
 
-$button-border-width:                            0;
+$button-border-width: 0;
 
-$button-default-border:                          $global-border !default;
-$button-default-hover-border:                    darken($global-border, 20%) !default;
-$button-default-active-border:                   darken($global-border, 30%) !default;
+$button-default-border: $global-border !default;
+$button-default-hover-border: darken($global-border, 20%) !default;
+$button-default-active-border: darken($global-border, 30%) !default;
 
-$button-disabled-border:                         $global-border !default;
+$button-disabled-border: $global-border !default;
 
-$button-text-border-width:                       $global-border-width !default;
-$button-text-border:                             $button-text-hover-color !default;
-
+$button-text-border-width: $global-border-width !default;
+$button-text-border: $button-text-hover-color !default;
 
 // Component
 // ========================================================================
-
-
 
 // @mixin hook-button-hover(){}
 
 // @mixin hook-button-active(){}
 
-
 // Style modifiers
 // ========================================================================
 
-
-
-
-
 .uk-button {
-    text-transform: $button-text-transform !important;
+  text-transform: $button-text-transform !important;
+  font-family: $second-font-family !important;
+  font-size: 18px !important;
 }
-
 
 //
 // Primary
 //
 .uk-button-default {
-    color: $light-cream !important;
-    border-radius: 8px !important;
+  color: $light-cream !important;
+  border-radius: 8px !important;
 }
-
-
 
 // @mixin hook-button-primary-hover(){}
 
@@ -77,8 +66,6 @@ $button-text-border:                             $button-text-hover-color !defau
 // Secondary
 //
 
-
-
 // @mixin hook-button-secondary-hover(){}
 
 // @mixin hook-button-secondary-active(){}
@@ -87,18 +74,12 @@ $button-text-border:                             $button-text-hover-color !defau
 // Danger
 //
 
-
-
 // @mixin hook-button-danger-hover(){}
 
 // @mixin hook-button-danger-active(){}
 
-
 // Disabled
 // ========================================================================
-
-
-
 
 // Size modifiers
 // ========================================================================
@@ -107,44 +88,28 @@ $button-text-border:                             $button-text-hover-color !defau
 
 // @mixin hook-button-large(){}
 
-
 // Text modifier
 // ========================================================================
-
-
-
-
-
-
-
 
 // Link modifier
 // ========================================================================
 
 // @mixin hook-button-link(){}
 
-
 // Miscellaneous
 // ========================================================================
-
-
-
 
 // Inverse
 // ========================================================================
 
-$inverse-button-default-background:             transparent !default;
-$inverse-button-default-color:                  $inverse-global-emphasis-color !default;
-$inverse-button-default-hover-background:       transparent !default;
-$inverse-button-default-hover-color:            $inverse-global-emphasis-color !default;
-$inverse-button-default-active-background:      transparent !default;
-$inverse-button-default-active-color:           $inverse-global-emphasis-color !default;
+$inverse-button-default-background: transparent !default;
+$inverse-button-default-color: $inverse-global-emphasis-color !default;
+$inverse-button-default-hover-background: transparent !default;
+$inverse-button-default-hover-color: $inverse-global-emphasis-color !default;
+$inverse-button-default-active-background: transparent !default;
+$inverse-button-default-active-color: $inverse-global-emphasis-color !default;
 
-$inverse-button-text-hover-color:               $inverse-global-emphasis-color !default;
-
-
-
-
+$inverse-button-text-hover-color: $inverse-global-emphasis-color !default;
 
 // @mixin hook-inverse-button-primary(){}
 // @mixin hook-inverse-button-primary-hover(){}
@@ -153,7 +118,6 @@ $inverse-button-text-hover-color:               $inverse-global-emphasis-color !
 // @mixin hook-inverse-button-secondary(){}
 // @mixin hook-inverse-button-secondary-hover(){}
 // @mixin hook-inverse-button-secondary-active(){}
-
 
 // @mixin hook-inverse-button-text-hover(){}
 // @mixin hook-inverse-button-text-disabled(){}

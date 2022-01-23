@@ -6,6 +6,8 @@ body {
 
 .uk-button {
   text-transform: none !important;
+  font-family: "Fraunces", serif !important;
+  font-size: 18px !important;
 }
 
 .uk-button-default {
@@ -19,20 +21,26 @@ body {
   border-radius: 8px;
 }
 
+.uk-card-hover {
+  cursor: pointer;
+}
+
 .uk-card-default {
-  background-color: #F4F1EB;
+  background-color: #f4f1eb;
   border-radius: 8px;
 }
 
 .uk-card-default.uk-card-hover:hover {
-  background-color: #FDD6BA;
+  background-color: #fdd6ba;
 }
 
-.uk-card-default:active, .uk-card-default.active {
+.uk-card-default:active,
+.uk-card-default.active {
   background-color: #0E8784 !important;
   color: #FEFCF7;
 }
-.uk-card-default:active .uk-card-title, .uk-card-default.active .uk-card-title {
+.uk-card-default:active .uk-card-title,
+.uk-card-default.active .uk-card-title {
   color: #FEFCF7;
 }
 
@@ -63,8 +71,27 @@ body {
   border-radius: 8px;
 }
 
+/* Phone landscape and smaller */
+@media (max-width: 640px) {
+  .hero-banner {
+    background-image: url(../assets/plan/mobile/image-hero-blackcup.jpg);
+  }
+}
+/* Tablet landscape and smaller */
+@media (max-width: 960px) {
+  .hero-banner {
+    background-image: url(../assets/plan/tablet/image-hero-blackcup.jpg);
+  }
+}
 #orderSummary {
   border-radius: 8px;
+}
+#orderSummary span {
+  color: #0E8784;
+}
+
+#modal-section span {
+  color: #0E8784;
 }
 
 /* ========================================================================
@@ -103,7 +130,7 @@ body {
  */
 a,
 .uk-link {
-  color: #da7d02;
+  color: #0E8784;
   text-decoration: none;
   cursor: pointer;
 }
@@ -2398,14 +2425,14 @@ select.uk-form-width-xsmall {
  * Default
  */
 .uk-button-default {
-  background-color: #0E8784;
+  background-color: #0e8784;
   color: #FEFCF7;
   border: 0 solid #e5e5e5;
 }
 
 /* Hover */
 .uk-button-default:hover {
-  background-color: #66D2CF;
+  background-color: #66d2cf;
   color: #333D4B;
   border-color: #b2b2b2;
 }
@@ -3224,7 +3251,7 @@ select.uk-form-width-xsmall {
  * Note: Header and Footer are only implemented for the default style
  */
 .uk-card-default {
-  background-color: #F4F1EB;
+  background-color: #f4f1eb;
   color: #333D4B;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -3235,7 +3262,7 @@ select.uk-form-width-xsmall {
 }
 
 .uk-card-default.uk-card-hover:hover {
-  background-color: #FDD6BA;
+  background-color: #fdd6ba;
   -webkit-box-shadow: none;
           box-shadow: none;
 }

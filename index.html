@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <div class="uk-section uk-padding-remove-vertical">
+  <section class="uk-section uk-padding-remove-vertical">
     <div class="uk-container">
       <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
         <div class="uk-navbar-left">
@@ -26,22 +26,21 @@
         </div>
       </nav>
     </div>
-  </div>
+  </section>
 
 
-  <div class="uk-section uk-light">
+  <section class="uk-section uk-light">
     <div class="uk-container hero-banner">
       <div class="uk-width-1-2@s" uk-grid>
         <h1>Create a plan</h1>
         <p>Build a subscription plan that best fits your needs. We offer an assortment of the best artisan coffees from
           around the globe delivered fresh to your door.</p>
       </div>
-
     </div>
-  </div>
+  </section>
 
 
-  <div class="uk-section uk-light">
+  <section class="uk-section uk-light">
     <div class="uk-container uk-background-secondary uk-padding bg-texture">
       <div class="uk-child-width-1-3@m  uk-grid-match" uk-grid>
         <div>
@@ -71,9 +70,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="uk-section">
+  <section class="uk-section">
     <div class="uk-container">
       <div class="uk-child-width-expand uk-grid-large" uk-grid>
         <!-- SIDE NAV -->
@@ -101,11 +100,11 @@
                 <h3>How do you drink your coffee?</h3>
               </a>
               <div class="uk-accordion-content">
-                <div class="uk-child-width-1-3@m uk-grid-large uk-grid-match" uk-grid>
+                <div class="uk-child-width-1-3@m uk-grid uk-grid-match" uk-grid>
                   <div>
-                    <div class="uk-card uk-card-default uk-card-hover uk-card-body" >
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
                       <h4 class="uk-card-title">Capsule</h4>
-                        <p>Compatible with Nespresso systems and similar brewers</p>
+                      <p>Compatible with Nespresso systems and similar brewers</p>
                     </div>
                   </div>
                   <div>
@@ -134,7 +133,7 @@
                   <div>
                     <div class="uk-card uk-card-default uk-card-hover uk-card-body">
                       <h4 class="uk-card-title">Single origin</h4>
-                        <p> Distinct, high quality coffee from a specific family-owned farm</p>
+                      <p> Distinct, high quality coffee from a specific family-owned farm</p>
                     </div>
                   </div>
                   <div>
@@ -163,7 +162,7 @@
                   <div>
                     <div class="uk-card uk-card-default uk-card-hover uk-card-body">
                       <h4 class="uk-card-title">250g</h4>
-                        <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+                      <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
                     </div>
                   </div>
                   <div>
@@ -221,7 +220,7 @@
                   <div>
                     <div class="uk-card uk-card-default uk-card-hover uk-card-body">
                       <h4 class="uk-card-title">Every week</h4>
-                        <p>$14.00 per shipment. Includes free first-class shipping.</p>
+                      <p>$14.00 per shipment. Includes free first-class shipping.</p>
                     </div>
                   </div>
                   <div>
@@ -243,47 +242,59 @@
 
           <!-- ORDER SUMMARY -->
 
-          <div id="orderSummary" class="uk-container-small uk-margin-large-top uk-padding uk-light uk-background-secondary">
+          <div id="orderSummary"
+            class="uk-container-small uk-margin-large-top uk-padding uk-light uk-background-secondary">
 
             <p class="uk-text-meta uk-text-uppercase">Order Summary</p>
             <p class="uk-h4">
-              “I drink my coffee as <span class="preferencesResult">______</span>, with a <span class="beanTypeResult">______</span> type of bean. <span class="quantityResult">______</span>, <span class="grindOptionResult">______</span>, sent to me <span class="deliveriesResult">______</span>.”
+              “I drink my coffee as <span class="preferencesResult">______</span>, with a <span
+                class="beanTypeResult">______</span> type of bean. <span class="quantityResult">______</span>, <span
+                class="grindOptionResult">______</span>, sent to me <span class="deliveriesResult">______</span>.”
             </p>
 
           </div>
 
-          <div class="uk-container uk-margin-medium-top uk-flex uk-flex-right@m">
-            <button href="#modal-sections" class="uk-button uk-button-default uk-h4" uk-toggle>Create my plan!</button>
- <!-- Modal -->
-            <div id="modal-sections" uk-modal>
+          <div class="uk-container uk-margin-medium-top uk-flex uk-flex-right@m uk-flex-center">
+            <button href="#modal-section" class="uk-button uk-button-default uk-button-large" uk-toggle>Create my plan!</button>
+            <!-- Modal -->
+            <div id="modal-section" uk-modal>
               <div class="uk-modal-dialog">
-                  <button class="uk-modal-close-default" type="button" uk-close></button>
-                  <div class="uk-modal-header">
-                      <h2 class="uk-modal-title">Order Summary</h2>
-                  </div>
-                  <div class="uk-modal-body">
-                      <p>
-                        “I drink my coffee as <span class="preferencesResult">______</span>, with a <span class="beanTypeResult">______</span> type of bean. <span class="quantityResult">______</span>, <span class="grindOptionResult">______</span>, sent to me <span class="deliveriesResult">______</span>.”
-                      </p>
-                      <p>
-                        Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout.
-                      </p>
-                  </div>
-                  <div class="uk-modal-footer uk-text-right">
-                    <div class="total-price">$<span class="totalCost">_____</span>/month</div>
-                      <button class="uk-button uk-button-default uk-modal-close uk-h4" type="button">Checkout</button>
-                     
-                  </div>
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                  <h2 class="uk-modal-title">Order Summary</h2>
+                </div>
+                <div class="uk-modal-body">
+                  <p>
+                    “I drink my coffee as <span class="preferencesResult">______</span>, with a <span
+                      class="beanTypeResult">______</span> type of bean. <span class="quantityResult">______</span>,
+                    <span class="grindOptionResult">______</span>, sent to me <span
+                      class="deliveriesResult">______</span>.”
+                  </p>
+                  <p>
+                    Is this correct? You can proceed to checkout or go back to plan selection if something is off.
+                    Subscription discount codes can also be redeemed at the checkout.
+                  </p>
+                </div>
+                <div class="uk-modal-footer uk-text-right">
+                  <div class="total-price">$<span class="totalCost">_____</span>/month</div>
+                  <button class="uk-button uk-button-default uk-modal-close uk-h4" type="button">Checkout</button>
+
+                </div>
               </div>
-          </div>
+            </div>
           </div>
 
         </div>
       </div>
-
     </div>
-  </div>
-  </div>
+  </section>
+  <footer class="uk-section">
+    <div class="uk-container">
+      <div class="uk-height-small">
+
+      </div>
+    </div>
+  </footer>
 
   <script src="js/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit.min.js"></script>
