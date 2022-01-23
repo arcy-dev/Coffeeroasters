@@ -50,6 +50,11 @@ $button-text-border: $button-text-hover-color !default;
   font-size: 18px !important;
 }
 
+.uk-button-default:disabled {
+  background-color: #e2dedb !important;
+  color: $light-cream;
+}
+
 //
 // Primary
 //

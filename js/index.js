@@ -1,5 +1,4 @@
 function cardSelector(id) {
-  // id = 'preferences
   const cardGroup = document.querySelectorAll(`#${id} .uk-card-default`);
 
   cardGroup.forEach((card, index) => {
@@ -38,9 +37,17 @@ function cardSelector(id) {
         deliveriesResult[1].innerText = deliveriesRequest;
         totalCost.innerText = priceArr[index];
       }
+
+      // Checks to see all cardGroups have been selected to remove 'disabled' attribute
+      const allActiveCards = document.querySelectorAll('.uk-card.active');
+      const button = document.querySelector('#createPlanBtn');
+      if (allActiveCards.length === 5) {
+        button.removeAttribute('disabled');
+      }
     });
   });
 }
+
 cardSelector('preferences');
 cardSelector('beanType');
 cardSelector('quantity');
