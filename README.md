@@ -1,6 +1,6 @@
-**Coffeeroasters subscription site**
+**Coffeeroasters subscription service page**
 
-Build a coffee subscription landing page in one day to showcase
+Build a coffee subscription service landing page in one day to showcase
 My technical skill set
 My logic for JS
 

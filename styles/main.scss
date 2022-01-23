@@ -9,6 +9,8 @@
 @import './theme/container.scss';
 @import './theme/card.scss';
 
+@import './theme/modal.scss';
+
 // Navs
 @import './theme/nav.scss';
 
@@ -46,6 +48,17 @@
 #modal-section {
   span {
     color: $dark-cyan;
+  }
+  .total-price {
+    font-family: $second-font-family;
+    font-size: 28px;
+    margin-right: 10px;
+  }
+  .totalCost {
+    color: $dark-grey-blue;
+  }
+  .uk-modal-body p {
+    color: $grey;
   }
 }
 

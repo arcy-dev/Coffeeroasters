@@ -38,10 +38,6 @@ $card-default-footer-border: $global-border !default;
 // Component
 // ========================================================================
 
-.uk-card-hover {
-  cursor: pointer;
-}
-
 // Sections
 // ========================================================================
 
@@ -84,6 +80,8 @@ $card-default-footer-border: $global-border !default;
 
 .uk-card-default.uk-card-hover:hover {
   background-color: $card-default-hover-background;
+  cursor: pointer;
+  transition: 0.3s !important;
 }
 .uk-card-default:active,
 .uk-card-default.active {

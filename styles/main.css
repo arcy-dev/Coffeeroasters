@@ -1,7 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@900&display=swap");
+.color-orange {
+  color: #fdd6ba !important;
+}
+
 body {
-  background-color: #FEFCF7;
+  background-color: #fefcf7;
 }
 
 .uk-button {
@@ -11,7 +15,7 @@ body {
 }
 
 .uk-button-default {
-  color: #FEFCF7 !important;
+  color: #fefcf7 !important;
   border-radius: 8px !important;
 }
 
@@ -21,10 +25,6 @@ body {
   border-radius: 8px;
 }
 
-.uk-card-hover {
-  cursor: pointer;
-}
-
 .uk-card-default {
   background-color: #f4f1eb;
   border-radius: 8px;
@@ -32,16 +32,27 @@ body {
 
 .uk-card-default.uk-card-hover:hover {
   background-color: #fdd6ba;
+  cursor: pointer;
+  -webkit-transition: 0.3s !important;
+  transition: 0.3s !important;
 }
 
 .uk-card-default:active,
 .uk-card-default.active {
-  background-color: #0E8784 !important;
-  color: #FEFCF7;
+  background-color: #0e8784 !important;
+  color: #fefcf7;
 }
 .uk-card-default:active .uk-card-title,
 .uk-card-default.active .uk-card-title {
-  color: #FEFCF7;
+  color: #fefcf7;
+}
+
+.uk-modal-header {
+  background-color: #333d4b;
+}
+
+.uk-modal-title {
+  color: #fefcf7;
 }
 
 .uk-nav {
@@ -53,7 +64,7 @@ body {
 }
 
 .uk-nav-primary > li.uk-active > a span {
-  color: #0E8784;
+  color: #0e8784;
 }
 
 .hero-banner {
@@ -87,11 +98,22 @@ body {
   border-radius: 8px;
 }
 #orderSummary span {
-  color: #0E8784;
+  color: #0e8784;
 }
 
 #modal-section span {
-  color: #0E8784;
+  color: #0e8784;
+}
+#modal-section .total-price {
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+  margin-right: 10px;
+}
+#modal-section .totalCost {
+  color: #333d4b;
+}
+#modal-section .uk-modal-body p {
+  color: #83888f;
 }
 
 /* ========================================================================
@@ -112,8 +134,8 @@ html {
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 3 */
-  background: #FEFCF7;
-  color: #333D4B;
+  background: #fefcf7;
+  color: #333d4b;
 }
 
 /*
@@ -130,7 +152,7 @@ body {
  */
 a,
 .uk-link {
-  color: #0E8784;
+  color: #0e8784;
   text-decoration: none;
   cursor: pointer;
 }
@@ -138,7 +160,7 @@ a,
 a:hover,
 .uk-link:hover,
 .uk-link-toggle:hover .uk-link {
-  color: #66D2CF;
+  color: #66d2cf;
   text-decoration: underline;
 }
 
@@ -195,7 +217,7 @@ em {
  */
 ins {
   background: #ffd;
-  color: #333D4B;
+  color: #333d4b;
   text-decoration: none;
 }
 
@@ -204,7 +226,7 @@ ins {
  */
 mark {
   background: #ffd;
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /*
@@ -352,7 +374,7 @@ h6, .uk-h6,
   margin: 0 0 20px 0;
   font-family: "Fraunces", serif !important;
   font-weight: 900;
-  color: #333D4B;
+  color: #333d4b;
   text-transform: none;
 }
 
@@ -478,7 +500,7 @@ blockquote {
   font-size: 1.25rem;
   line-height: 1.5;
   font-style: italic;
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* Add margin if adjacent element */
@@ -497,7 +519,7 @@ blockquote footer {
   margin-top: 10px;
   font-size: 0.875rem;
   line-height: 1.5;
-  color: #333D4B;
+  color: #333d4b;
 }
 blockquote footer::before {
   content: "— ";
@@ -510,7 +532,7 @@ blockquote footer::before {
  */
 pre {
   font: 0.875rem / 1.5 Consolas, monaco, monospace;
-  color: #333D4B;
+  color: #333d4b;
   -moz-tab-size: 4;
   -o-tab-size: 4;
      tab-size: 4;
@@ -519,7 +541,7 @@ pre {
   padding: 10px;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
-  background: #FEFCF7;
+  background: #fefcf7;
 }
 
 pre code {
@@ -542,7 +564,7 @@ pre code {
 
 /* 2 */
 :focus:not([tabindex^="-"]) {
-  outline: 2px dotted #333D4B;
+  outline: 2px dotted #333d4b;
   outline-offset: 1px;
 }
 
@@ -553,19 +575,19 @@ pre code {
 
 /* 4 */
 :focus-visible {
-  outline: 2px dotted #333D4B;
+  outline: 2px dotted #333d4b;
 }
 
 /* Selection pseudo-element
  ========================================================================== */
 ::-moz-selection {
   background: #39f;
-  color: #FEFCF7;
+  color: #fefcf7;
   text-shadow: none;
 }
 ::selection {
   background: #39f;
-  color: #FEFCF7;
+  color: #fefcf7;
   text-shadow: none;
 }
 
@@ -631,13 +653,13 @@ template {
 a.uk-link-muted,
 .uk-link-muted a,
 .uk-link-toggle .uk-link-muted {
-  color: #83888F;
+  color: #83888f;
 }
 
 a.uk-link-muted:hover,
 .uk-link-muted a:hover,
 .uk-link-toggle:hover .uk-link-muted {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* Text
@@ -651,7 +673,7 @@ a.uk-link-text,
 a.uk-link-text:hover,
 .uk-link-text a:hover,
 .uk-link-toggle:hover .uk-link-text {
-  color: #83888F;
+  color: #83888f;
 }
 
 /* Heading
@@ -665,7 +687,7 @@ a.uk-link-heading,
 a.uk-link-heading:hover,
 .uk-link-heading a:hover,
 .uk-link-toggle:hover .uk-link-heading {
-  color: #0E8784;
+  color: #0e8784;
   text-decoration: none;
 }
 
@@ -1004,19 +1026,19 @@ a.uk-link-reset,
  * Color modifiers
  */
 .uk-list-muted > ::before {
-  color: #83888F !important;
+  color: #83888f !important;
 }
 
 .uk-list-emphasis > ::before {
-  color: #333D4B !important;
+  color: #333d4b !important;
 }
 
 .uk-list-primary > ::before {
-  color: #0E8784 !important;
+  color: #0e8784 !important;
 }
 
 .uk-list-secondary > ::before {
-  color: #2C343E !important;
+  color: #2c343e !important;
 }
 
 /* Image bullet modifier
@@ -1032,7 +1054,7 @@ a.uk-link-reset,
   width: 30px;
   height: 1.67em;
   margin-bottom: -1.67em;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%226%22%20height%3D%226%22%20viewBox%3D%220%200%206%206%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22%23333D4B%22%20cx%3D%223%22%20cy%3D%223%22%20r%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%226%22%20height%3D%226%22%20viewBox%3D%220%200%206%206%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22%23333d4b%22%20cx%3D%223%22%20cy%3D%223%22%20r%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -1116,7 +1138,7 @@ a.uk-link-reset,
  * Term
  */
 .uk-description-list > dt {
-  color: #333D4B;
+  color: #333d4b;
   font-size: 0.875rem;
   font-weight: normal;
   text-transform: uppercase;
@@ -1175,7 +1197,7 @@ a.uk-link-reset,
   /* 1 */
   font-size: 0.875rem;
   font-weight: normal;
-  color: #83888F;
+  color: #83888f;
   text-transform: uppercase;
 }
 
@@ -1204,7 +1226,7 @@ a.uk-link-reset,
 .uk-table caption {
   font-size: 0.875rem;
   text-align: left;
-  color: #83888F;
+  color: #83888f;
 }
 
 /* Alignment modifier
@@ -1448,11 +1470,11 @@ button.uk-icon:not(:disabled) {
  * Link
  */
 .uk-icon-link {
-  color: #83888F;
+  color: #83888f;
 }
 
 .uk-icon-link:hover {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* OnClick + Active */
@@ -1472,7 +1494,7 @@ button.uk-icon:not(:disabled) {
   height: 36px;
   border-radius: 500px;
   background: #f8f8f8;
-  color: #83888F;
+  color: #83888f;
   vertical-align: middle;
   /* 1 */
   display: -webkit-inline-box;
@@ -1493,14 +1515,14 @@ button.uk-icon:not(:disabled) {
 /* Hover */
 .uk-icon-button:hover {
   background-color: #ebebeb;
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* OnClick + Active */
 .uk-icon-button:active,
 .uk-active > .uk-icon-button {
   background-color: #dfdfdf;
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* ========================================================================
@@ -1579,7 +1601,7 @@ button.uk-icon:not(:disabled) {
   height: 15px;
   width: 15px;
   border-radius: 500px;
-  background: #FEFCF7;
+  background: #fefcf7;
   border: 1px solid #cccccc;
 }
 
@@ -1591,7 +1613,7 @@ button.uk-icon:not(:disabled) {
   height: 15px;
   width: 15px;
   border-radius: 500px;
-  background: #FEFCF7;
+  background: #fefcf7;
   border: 1px solid #cccccc;
 }
 
@@ -1609,7 +1631,7 @@ button.uk-icon:not(:disabled) {
   height: 15px;
   width: 15px;
   border-radius: 500px;
-  background: #FEFCF7;
+  background: #fefcf7;
   border: 1px solid #cccccc;
 }
 
@@ -1792,8 +1814,8 @@ button.uk-icon:not(:disabled) {
   border: 0 none;
   /* 4 */
   padding: 0 10px;
-  background: #FEFCF7;
-  color: #333D4B;
+  background: #fefcf7;
+  color: #333d4b;
   border: 1px solid #e5e5e5;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
@@ -1842,9 +1864,9 @@ button.uk-icon:not(:disabled) {
 .uk-select:focus,
 .uk-textarea:focus {
   outline: none;
-  background-color: #FEFCF7;
-  color: #333D4B;
-  border-color: #0E8784;
+  background-color: #fefcf7;
+  color: #333d4b;
+  border-color: #0e8784;
 }
 
 /* Disabled */
@@ -1852,7 +1874,7 @@ button.uk-icon:not(:disabled) {
 .uk-select:disabled,
 .uk-textarea:disabled {
   background-color: #f8f8f8;
-  color: #83888F;
+  color: #83888f;
   border-color: #e5e5e5;
 }
 
@@ -1860,43 +1882,43 @@ button.uk-icon:not(:disabled) {
  * Placeholder
  */
 .uk-input::-ms-input-placeholder {
-  color: #83888F !important;
+  color: #83888f !important;
 }
 
 .uk-input::-webkit-input-placeholder {
-  color: #83888F;
+  color: #83888f;
 }
 
 .uk-input::-moz-placeholder {
-  color: #83888F;
+  color: #83888f;
 }
 
 .uk-input:-ms-input-placeholder {
-  color: #83888F;
+  color: #83888f;
 }
 
 .uk-input::placeholder {
-  color: #83888F;
+  color: #83888f;
 }
 
 .uk-textarea::-ms-input-placeholder {
-  color: #83888F !important;
+  color: #83888f !important;
 }
 
 .uk-textarea::-webkit-input-placeholder {
-  color: #83888F;
+  color: #83888f;
 }
 
 .uk-textarea::-moz-placeholder {
-  color: #83888F;
+  color: #83888f;
 }
 
 .uk-textarea:-ms-input-placeholder {
-  color: #83888F;
+  color: #83888f;
 }
 
 .uk-textarea::placeholder {
-  color: #83888F;
+  color: #83888f;
 }
 
 /* Style modifier (`uk-input`, `uk-select` and `uk-textarea`)
@@ -2024,7 +2046,7 @@ select.uk-form-width-xsmall {
   -moz-appearance: none;
   /* 2 */
   padding-right: 20px;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23333D4B%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23333D4B%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23333d4b%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23333d4b%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
   background-position: 100% 50%;
 }
@@ -2036,14 +2058,14 @@ select.uk-form-width-xsmall {
 
 /* 4 */
 .uk-select:not([multiple]):not([size]) option {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /*
  * Disabled
  */
 .uk-select:not([multiple]):not([size]):disabled {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%2383888F%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%2383888F%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%2383888f%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%2383888f%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 
 /* Datalist
@@ -2059,7 +2081,7 @@ select.uk-form-width-xsmall {
 
 .uk-input[list]:hover,
 .uk-input[list]:focus {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23333D4B%22%20points%3D%2212%2012%208%206%2016%206%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23333d4b%22%20points%3D%2212%2012%208%206%2016%206%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 
 /* 1 */
@@ -2113,7 +2135,7 @@ select.uk-form-width-xsmall {
 .uk-checkbox:focus {
   background-color: rgba(0, 0, 0, 0);
   outline: none;
-  border-color: #0E8784;
+  border-color: #0e8784;
 }
 
 /*
@@ -2122,7 +2144,7 @@ select.uk-form-width-xsmall {
 .uk-radio:checked,
 .uk-checkbox:checked,
 .uk-checkbox:indeterminate {
-  background-color: #0E8784;
+  background-color: #0e8784;
   border-color: transparent;
 }
 
@@ -2137,15 +2159,15 @@ select.uk-form-width-xsmall {
  * Icons
  */
 .uk-radio:checked {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22%23FEFCF7%22%20cx%3D%228%22%20cy%3D%228%22%20r%3D%222%22%20%2F%3E%0A%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22%23fefcf7%22%20cx%3D%228%22%20cy%3D%228%22%20r%3D%222%22%20%2F%3E%0A%3C%2Fsvg%3E");
 }
 
 .uk-checkbox:checked {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23FEFCF7%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23fefcf7%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 
 .uk-checkbox:indeterminate {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23FEFCF7%22%20x%3D%223%22%20y%3D%228%22%20width%3D%2210%22%20height%3D%221%22%20%2F%3E%0A%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23fefcf7%22%20x%3D%223%22%20y%3D%228%22%20width%3D%2210%22%20height%3D%221%22%20%2F%3E%0A%3C%2Fsvg%3E");
 }
 
 /*
@@ -2158,15 +2180,15 @@ select.uk-form-width-xsmall {
 }
 
 .uk-radio:disabled:checked {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22%2383888F%22%20cx%3D%228%22%20cy%3D%228%22%20r%3D%222%22%20%2F%3E%0A%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22%2383888f%22%20cx%3D%228%22%20cy%3D%228%22%20r%3D%222%22%20%2F%3E%0A%3C%2Fsvg%3E");
 }
 
 .uk-checkbox:disabled:checked {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%2383888F%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%2383888f%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 
 .uk-checkbox:disabled:indeterminate {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%2383888F%22%20x%3D%223%22%20y%3D%228%22%20width%3D%2210%22%20height%3D%221%22%20%2F%3E%0A%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%2383888f%22%20x%3D%223%22%20y%3D%228%22%20width%3D%2210%22%20height%3D%221%22%20%2F%3E%0A%3C%2Fsvg%3E");
 }
 
 /* Legend
@@ -2244,7 +2266,7 @@ select.uk-form-width-xsmall {
 /* Label
  ========================================================================== */
 .uk-form-label {
-  color: #333D4B;
+  color: #333d4b;
   font-size: 0.875rem;
 }
 
@@ -2313,14 +2335,14 @@ select.uk-form-width-xsmall {
       -ms-flex-align: center;
           align-items: center;
   /* 4 */
-  color: #83888F;
+  color: #83888f;
 }
 
 /*
  * Required for `a`.
  */
 .uk-form-icon:hover {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /*
@@ -2426,14 +2448,14 @@ select.uk-form-width-xsmall {
  */
 .uk-button-default {
   background-color: #0e8784;
-  color: #FEFCF7;
+  color: #fefcf7;
   border: 0 solid #e5e5e5;
 }
 
 /* Hover */
 .uk-button-default:hover {
   background-color: #66d2cf;
-  color: #333D4B;
+  color: #333d4b;
   border-color: #b2b2b2;
 }
 
@@ -2441,7 +2463,7 @@ select.uk-form-width-xsmall {
 .uk-button-default:active,
 .uk-button-default.uk-active {
   background-color: transparent;
-  color: #333D4B;
+  color: #333d4b;
   border-color: #999999;
 }
 
@@ -2449,44 +2471,44 @@ select.uk-form-width-xsmall {
  * Primary
  */
 .uk-button-primary {
-  background-color: #0E8784;
-  color: #FEFCF7;
+  background-color: #0e8784;
+  color: #fefcf7;
   border: 0 solid transparent;
 }
 
 /* Hover */
 .uk-button-primary:hover {
   background-color: #0c706d;
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 
 /* OnClick + Active */
 .uk-button-primary:active,
 .uk-button-primary.uk-active {
   background-color: #095957;
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 
 /*
  * Secondary
  */
 .uk-button-secondary {
-  background-color: #2C343E;
-  color: #FEFCF7;
+  background-color: #2c343e;
+  color: #fefcf7;
   border: 0 solid transparent;
 }
 
 /* Hover */
 .uk-button-secondary:hover {
   background-color: #21272f;
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 
 /* OnClick + Active */
 .uk-button-secondary:active,
 .uk-button-secondary.uk-active {
   background-color: #171b20;
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 
 /*
@@ -2494,21 +2516,21 @@ select.uk-form-width-xsmall {
  */
 .uk-button-danger {
   background-color: #f0506e;
-  color: #FEFCF7;
+  color: #fefcf7;
   border: 0 solid transparent;
 }
 
 /* Hover */
 .uk-button-danger:hover {
   background-color: #ee395b;
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 
 /* OnClick + Active */
 .uk-button-danger:active,
 .uk-button-danger.uk-active {
   background-color: #ec2147;
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 
 /*
@@ -2520,7 +2542,7 @@ select.uk-form-width-xsmall {
 .uk-button-secondary:disabled,
 .uk-button-danger:disabled {
   background-color: transparent;
-  color: #83888F;
+  color: #83888f;
   border-color: #e5e5e5;
 }
 
@@ -2551,7 +2573,7 @@ select.uk-form-width-xsmall {
   line-height: 1.67;
   background: none;
   /* 2 */
-  color: #333D4B;
+  color: #333d4b;
   position: relative;
 }
 .uk-button-text::before {
@@ -2560,14 +2582,14 @@ select.uk-form-width-xsmall {
   bottom: 0;
   left: 0;
   right: 100%;
-  border-bottom: 1px solid #333D4B;
+  border-bottom: 1px solid #333d4b;
   -webkit-transition: right 0.3s ease-out;
   transition: right 0.3s ease-out;
 }
 
 /* Hover */
 .uk-button-text:hover {
-  color: #333D4B;
+  color: #333d4b;
 }
 .uk-button-text:hover::before {
   right: 0;
@@ -2575,7 +2597,7 @@ select.uk-form-width-xsmall {
 
 /* Disabled */
 .uk-button-text:disabled {
-  color: #83888F;
+  color: #83888f;
 }
 .uk-button-text:disabled::before {
   display: none;
@@ -2592,18 +2614,18 @@ select.uk-form-width-xsmall {
   line-height: 1.67;
   background: none;
   /* 2 */
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* Hover */
 .uk-button-link:hover {
-  color: #83888F;
+  color: #83888f;
   text-decoration: none;
 }
 
 /* Disabled */
 .uk-button-link:disabled {
-  color: #83888F;
+  color: #83888f;
   text-decoration: none;
 }
 
@@ -2711,17 +2733,17 @@ select.uk-form-width-xsmall {
  * 1. Remove right border in IE11 and Edge
  */
 .uk-progress::-webkit-progress-value {
-  background-color: #0E8784;
+  background-color: #0e8784;
   -webkit-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
 
 .uk-progress::-moz-progress-bar {
-  background-color: #0E8784;
+  background-color: #0e8784;
 }
 
 .uk-progress::-ms-fill {
-  background-color: #0E8784;
+  background-color: #0e8784;
   -ms-transition: width 0.6s ease;
   transition: width 0.6s ease;
   /* 1 */
@@ -2811,7 +2833,7 @@ select.uk-form-width-xsmall {
  * Default
  */
 .uk-section-default {
-  background: #FEFCF7;
+  background: #fefcf7;
 }
 
 /*
@@ -2825,14 +2847,14 @@ select.uk-form-width-xsmall {
  * Primary
  */
 .uk-section-primary {
-  background: #0E8784;
+  background: #0e8784;
 }
 
 /*
  * Secondary
  */
 .uk-section-secondary {
-  background: #2C343E;
+  background: #2c343e;
 }
 
 /* Overlap modifier
@@ -3103,7 +3125,7 @@ select.uk-form-width-xsmall {
  * Default
  */
 .uk-tile-default {
-  background-color: #FEFCF7;
+  background-color: #fefcf7;
 }
 
 /*
@@ -3117,14 +3139,14 @@ select.uk-form-width-xsmall {
  * Primary
  */
 .uk-tile-primary {
-  background-color: #0E8784;
+  background-color: #0e8784;
 }
 
 /*
  * Secondary
  */
 .uk-tile-secondary {
-  background-color: #2C343E;
+  background-color: #2c343e;
 }
 
 /* ========================================================================
@@ -3211,8 +3233,8 @@ select.uk-form-width-xsmall {
   height: 22px;
   padding: 0 10px;
   /* 3 */
-  background: #0E8784;
-  color: #FEFCF7;
+  background: #0e8784;
+  color: #fefcf7;
   font-size: 0.875rem;
   /* 4 */
   display: -webkit-box;
@@ -3239,7 +3261,7 @@ select.uk-form-width-xsmall {
 /* Hover modifier
  ========================================================================== */
 .uk-card-hover:not(.uk-card-default):not(.uk-card-primary):not(.uk-card-secondary):hover {
-  background-color: #FEFCF7;
+  background-color: #fefcf7;
   -webkit-box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
           box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
 }
@@ -3252,13 +3274,13 @@ select.uk-form-width-xsmall {
  */
 .uk-card-default {
   background-color: #f4f1eb;
-  color: #333D4B;
+  color: #333d4b;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
 .uk-card-default .uk-card-title {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 .uk-card-default.uk-card-hover:hover {
@@ -3279,18 +3301,18 @@ select.uk-form-width-xsmall {
  * Primary
  */
 .uk-card-primary {
-  background-color: #0E8784;
-  color: #FEFCF7;
+  background-color: #0e8784;
+  color: #fefcf7;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 .uk-card-primary .uk-card-title {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 
 .uk-card-primary.uk-card-hover:hover {
-  background-color: #0E8784;
+  background-color: #0e8784;
   -webkit-box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
           box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
 }
@@ -3299,18 +3321,18 @@ select.uk-form-width-xsmall {
  * Secondary
  */
 .uk-card-secondary {
-  background-color: #2C343E;
-  color: #FEFCF7;
+  background-color: #2c343e;
+  color: #fefcf7;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 .uk-card-secondary .uk-card-title {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 
 .uk-card-secondary.uk-card-hover:hover {
-  background-color: #2C343E;
+  background-color: #2c343e;
   -webkit-box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
           box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
 }
@@ -3453,7 +3475,7 @@ select.uk-form-width-xsmall {
  * Adopts `uk-icon`
  */
 .uk-close {
-  color: #83888F;
+  color: #83888f;
   -webkit-transition: 0.1s ease-in-out;
   transition: 0.1s ease-in-out;
   -webkit-transition-property: color, opacity;
@@ -3462,7 +3484,7 @@ select.uk-form-width-xsmall {
 
 /* Hover */
 .uk-close:hover {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* ========================================================================
@@ -3552,19 +3574,19 @@ select.uk-form-width-xsmall {
  */
 .uk-totop {
   padding: 5px;
-  color: #83888F;
+  color: #83888f;
   -webkit-transition: color 0.1s ease-in-out;
   transition: color 0.1s ease-in-out;
 }
 
 /* Hover */
 .uk-totop:hover {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* OnClick */
 .uk-totop:active {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* ========================================================================
@@ -3575,14 +3597,14 @@ select.uk-form-width-xsmall {
  */
 .uk-marker {
   padding: 5px;
-  background: #2C343E;
-  color: #FEFCF7;
+  background: #2c343e;
+  color: #fefcf7;
   border-radius: 500px;
 }
 
 /* Hover */
 .uk-marker:hover {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 
 /* ========================================================================
@@ -3593,7 +3615,7 @@ select.uk-form-width-xsmall {
   margin-bottom: 20px;
   padding: 15px 29px 15px 15px;
   background: #f8f8f8;
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* Add margin if adjacent element */
@@ -3641,7 +3663,7 @@ select.uk-form-width-xsmall {
  */
 .uk-alert-primary {
   background: #b2d9d8;
-  color: #0E8784;
+  color: #0e8784;
 }
 
 /*
@@ -3657,7 +3679,7 @@ select.uk-form-width-xsmall {
  */
 .uk-alert-warning {
   background: white;
-  color: #FDD6BA;
+  color: #fdd6ba;
 }
 
 /*
@@ -3728,8 +3750,8 @@ select.uk-form-width-xsmall {
   border-radius: 500px;
   vertical-align: middle;
   /* 1 */
-  background: #0E8784;
-  color: #FEFCF7 !important;
+  background: #0e8784;
+  color: #fefcf7 !important;
   font-size: 11px;
   /* 2 */
   display: -webkit-inline-box;
@@ -3757,10 +3779,10 @@ select.uk-form-width-xsmall {
 .uk-label {
   display: inline-block;
   padding: 0 10px;
-  background: #0E8784;
+  background: #0e8784;
   line-height: 1.67;
   font-size: 0.875rem;
-  color: #FEFCF7;
+  color: #fefcf7;
   vertical-align: middle;
   white-space: nowrap;
   border-radius: 2px;
@@ -3774,15 +3796,15 @@ select.uk-form-width-xsmall {
  */
 .uk-label-success {
   background-color: #32d296;
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 
 /*
  * Warning
  */
 .uk-label-warning {
-  background-color: #FDD6BA;
-  color: #FEFCF7;
+  background-color: #fdd6ba;
+  color: #fefcf7;
 }
 
 /*
@@ -3790,7 +3812,7 @@ select.uk-form-width-xsmall {
  */
 .uk-label-danger {
   background-color: #f0506e;
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 
 /* ========================================================================
@@ -3863,13 +3885,13 @@ select.uk-form-width-xsmall {
 .uk-article-meta {
   font-size: 0.875rem;
   line-height: 1.4;
-  color: #83888F;
+  color: #83888f;
 }
 .uk-article-meta a {
-  color: #83888F;
+  color: #83888f;
 }
 .uk-article-meta a:hover {
-  color: #333D4B;
+  color: #333d4b;
   text-decoration: none;
 }
 
@@ -3909,7 +3931,7 @@ select.uk-form-width-xsmall {
 .uk-comment-meta {
   font-size: 0.875rem;
   line-height: 1.4;
-  color: #83888F;
+  color: #83888f;
 }
 
 /* Avatar
@@ -4022,7 +4044,7 @@ select.uk-form-width-xsmall {
   width: 100%;
   /* 9 */
   border: none;
-  color: #333D4B;
+  color: #333d4b;
 }
 
 .uk-search-input:focus {
@@ -4031,23 +4053,23 @@ select.uk-form-width-xsmall {
 
 /* Placeholder */
 .uk-search-input:-ms-input-placeholder {
-  color: #83888F !important;
+  color: #83888f !important;
 }
 
 .uk-search-input::-webkit-input-placeholder {
-  color: #83888F;
+  color: #83888f;
 }
 
 .uk-search-input::-moz-placeholder {
-  color: #83888F;
+  color: #83888f;
 }
 
 .uk-search-input::-ms-input-placeholder {
-  color: #83888F;
+  color: #83888f;
 }
 
 .uk-search-input::placeholder {
-  color: #83888F;
+  color: #83888f;
 }
 
 /* Icon (Adopts `uk-icon`)
@@ -4075,14 +4097,14 @@ select.uk-form-width-xsmall {
       -ms-flex-align: center;
           align-items: center;
   /* 3 */
-  color: #83888F;
+  color: #83888f;
 }
 
 /*
  * Required for `a`.
  */
 .uk-search .uk-search-icon:hover {
-  color: #83888F;
+  color: #83888f;
 }
 
 /*
@@ -4120,7 +4142,7 @@ select.uk-form-width-xsmall {
 /* Focus */
 .uk-search-default .uk-search-input:focus {
   background-color: rgba(0, 0, 0, 0);
-  border-color: #0E8784;
+  border-color: #0e8784;
 }
 
 /*
@@ -4203,12 +4225,12 @@ select.uk-form-width-xsmall {
 /* Toggle
  ========================================================================== */
 .uk-search-toggle {
-  color: #83888F;
+  color: #83888f;
 }
 
 /* Hover */
 .uk-search-toggle:hover {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* ========================================================================
@@ -4231,7 +4253,7 @@ select.uk-form-width-xsmall {
   display: block;
   font-size: 1.25rem;
   line-height: 1.4;
-  color: #333D4B;
+  color: #333d4b;
   overflow: hidden;
 }
 .uk-accordion-title::before {
@@ -4240,17 +4262,17 @@ select.uk-form-width-xsmall {
   height: 1.4em;
   margin-left: 10px;
   float: right;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23333D4B%22%20width%3D%2213%22%20height%3D%221%22%20x%3D%220%22%20y%3D%226%22%20%2F%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23333D4B%22%20width%3D%221%22%20height%3D%2213%22%20x%3D%226%22%20y%3D%220%22%20%2F%3E%0A%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23333d4b%22%20width%3D%2213%22%20height%3D%221%22%20x%3D%220%22%20y%3D%226%22%20%2F%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23333d4b%22%20width%3D%221%22%20height%3D%2213%22%20x%3D%226%22%20y%3D%220%22%20%2F%3E%0A%3C%2Fsvg%3E");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 .uk-open > .uk-accordion-title::before {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23333D4B%22%20width%3D%2213%22%20height%3D%221%22%20x%3D%220%22%20y%3D%226%22%20%2F%3E%0A%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23333d4b%22%20width%3D%2213%22%20height%3D%221%22%20x%3D%220%22%20y%3D%226%22%20%2F%3E%0A%3C%2Fsvg%3E");
 }
 
 /* Hover */
 .uk-accordion-title:hover {
-  color: #333D4B;
+  color: #333d4b;
   text-decoration: none;
 }
 
@@ -4339,8 +4361,8 @@ select.uk-form-width-xsmall {
   min-width: 200px;
   /* 4 */
   padding: 25px;
-  background: #FEFCF7;
-  color: #333D4B;
+  background: #fefcf7;
+  color: #333d4b;
   -webkit-box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
           box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
 }
@@ -4362,20 +4384,20 @@ select.uk-form-width-xsmall {
  * Items
  */
 .uk-dropdown-nav > li > a {
-  color: #83888F;
+  color: #83888f;
 }
 
 /* Hover + Active */
 .uk-dropdown-nav > li > a:hover,
 .uk-dropdown-nav > li.uk-active > a {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /*
  * Header
  */
 .uk-dropdown-nav .uk-nav-header {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /*
@@ -4389,12 +4411,12 @@ select.uk-form-width-xsmall {
  * Sublists
  */
 .uk-dropdown-nav .uk-nav-sub a {
-  color: #83888F;
+  color: #83888f;
 }
 
 .uk-dropdown-nav .uk-nav-sub a:hover,
 .uk-dropdown-nav .uk-nav-sub li.uk-active > a {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* Direction / Alignment modifiers
@@ -4506,7 +4528,7 @@ select.uk-form-width-xsmall {
   /* 3 */
   max-width: calc(100% - 0.01px) !important;
   /* 4 */
-  background: #FEFCF7;
+  background: #fefcf7;
   /* 5 */
   opacity: 0;
   -webkit-transform: translateY(-100px);
@@ -4568,15 +4590,15 @@ select.uk-form-width-xsmall {
 .uk-modal-header {
   display: flow-root;
   padding: 15px 30px;
-  background: #FEFCF7;
-  border-bottom: 1px solid #e5e5e5;
+  background: #333d4b;
+  border-bottom: none solid #e5e5e5;
 }
 
 .uk-modal-footer {
   display: flow-root;
   padding: 15px 30px;
-  background: #FEFCF7;
-  border-top: 1px solid #e5e5e5;
+  background: #fefcf7;
+  border-top: none solid none;
 }
 
 /*
@@ -4633,7 +4655,7 @@ select.uk-form-width-xsmall {
 }
 
 .uk-modal-close-outside:hover {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 
 /* Tablet landscape and bigger */
@@ -4652,7 +4674,7 @@ select.uk-form-width-xsmall {
   top: 0;
   right: 0;
   padding: 20px;
-  background: #FEFCF7;
+  background: #fefcf7;
 }
 
 /* ========================================================================
@@ -4877,7 +4899,7 @@ select.uk-form-width-xsmall {
           box-sizing: border-box;
   width: 270px;
   padding: 20px 20px;
-  background: #2C343E;
+  background: #2c343e;
   /* 3 */
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -5206,7 +5228,7 @@ select.uk-form-width-xsmall {
   position: relative;
   padding: 15px;
   background: #f8f8f8;
-  color: #333D4B;
+  color: #333d4b;
   font-size: 1.25rem;
   line-height: 1.4;
   cursor: pointer;
@@ -5236,7 +5258,7 @@ select.uk-form-width-xsmall {
  * Primary
  */
 .uk-notification-message-primary {
-  color: #0E8784;
+  color: #0e8784;
 }
 
 /*
@@ -5250,7 +5272,7 @@ select.uk-form-width-xsmall {
  * Warning
  */
 .uk-notification-message-warning {
-  color: #FDD6BA;
+  color: #fdd6ba;
 }
 
 /*
@@ -5286,7 +5308,7 @@ select.uk-form-width-xsmall {
   /* 5 */
   background: #666;
   border-radius: 2px;
-  color: #FEFCF7;
+  color: #fefcf7;
   font-size: 12px;
 }
 
@@ -5932,13 +5954,13 @@ ul.uk-nav-sub {
   width: 1.67em;
   height: 1.67em;
   margin-left: auto;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23333D4B%22%20stroke-width%3D%221.1%22%20points%3D%2210%201%204%207%2010%2013%22%20%2F%3E%0A%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23333d4b%22%20stroke-width%3D%221.1%22%20points%3D%2210%201%204%207%2010%2013%22%20%2F%3E%0A%3C%2Fsvg%3E");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .uk-nav-parent-icon > .uk-parent.uk-open > a::after {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23333D4B%22%20stroke-width%3D%221.1%22%20points%3D%221%204%207%2010%2013%204%22%20%2F%3E%0A%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23333d4b%22%20stroke-width%3D%221.1%22%20points%3D%221%204%207%2010%2013%204%22%20%2F%3E%0A%3C%2Fsvg%3E");
 }
 
 /* Header
@@ -5969,24 +5991,24 @@ ul.uk-nav-sub {
  * Items
  */
 .uk-nav-default > li > a {
-  color: #83888F;
+  color: #83888f;
 }
 
 /* Hover */
 .uk-nav-default > li > a:hover {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* Active */
 .uk-nav-default > li.uk-active > a {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /*
  * Header
  */
 .uk-nav-default .uk-nav-header {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /*
@@ -6000,15 +6022,15 @@ ul.uk-nav-sub {
  * Sublists
  */
 .uk-nav-default .uk-nav-sub a {
-  color: #83888F;
+  color: #83888f;
 }
 
 .uk-nav-default .uk-nav-sub a:hover {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 .uk-nav-default .uk-nav-sub li.uk-active > a {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* Primary modifier
@@ -6019,24 +6041,24 @@ ul.uk-nav-sub {
 .uk-nav-primary > li > a {
   font-size: 1.5rem;
   line-height: 1.67;
-  color: #83888F;
+  color: #83888f;
 }
 
 /* Hover */
 .uk-nav-primary > li > a:hover {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* Active */
 .uk-nav-primary > li.uk-active > a {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /*
  * Header
  */
 .uk-nav-primary .uk-nav-header {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /*
@@ -6050,15 +6072,15 @@ ul.uk-nav-sub {
  * Sublists
  */
 .uk-nav-primary .uk-nav-sub a {
-  color: #83888F;
+  color: #83888f;
 }
 
 .uk-nav-primary .uk-nav-sub a:hover {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 .uk-nav-primary .uk-nav-sub li.uk-active > a {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* Alignment modifier
@@ -6271,7 +6293,7 @@ ul.uk-nav-sub {
  * Nav items
  */
 .uk-navbar-nav > li > a {
-  color: #83888F;
+  color: #83888f;
   text-transform: uppercase;
   -webkit-transition: 0.1s ease-in-out;
   transition: 0.1s ease-in-out;
@@ -6285,23 +6307,23 @@ ul.uk-nav-sub {
  */
 .uk-navbar-nav > li:hover > a,
 .uk-navbar-nav > li > a[aria-expanded=true] {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* OnClick */
 .uk-navbar-nav > li > a:active {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* Active */
 .uk-navbar-nav > li.uk-active > a {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* Item
  ========================================================================== */
 .uk-navbar-item {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /*
@@ -6314,12 +6336,12 @@ ul.uk-nav-sub {
 /* Toggle
  ========================================================================== */
 .uk-navbar-toggle {
-  color: #83888F;
+  color: #83888f;
 }
 
 .uk-navbar-toggle:hover,
 .uk-navbar-toggle[aria-expanded=true] {
-  color: #333D4B;
+  color: #333d4b;
   text-decoration: none;
 }
 
@@ -6357,8 +6379,8 @@ ul.uk-nav-sub {
   width: 200px;
   /* 4 */
   padding: 25px;
-  background: #FEFCF7;
-  color: #333D4B;
+  background: #fefcf7;
+  color: #333d4b;
   -webkit-box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
           box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
 }
@@ -6451,24 +6473,24 @@ ul.uk-nav-sub {
  * Items
  */
 .uk-navbar-dropdown-nav > li > a {
-  color: #83888F;
+  color: #83888f;
 }
 
 /* Hover */
 .uk-navbar-dropdown-nav > li > a:hover {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* Active */
 .uk-navbar-dropdown-nav > li.uk-active > a {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /*
  * Header
  */
 .uk-navbar-dropdown-nav .uk-nav-header {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /*
@@ -6482,21 +6504,21 @@ ul.uk-nav-sub {
  * Sublists
  */
 .uk-navbar-dropdown-nav .uk-nav-sub a {
-  color: #83888F;
+  color: #83888f;
 }
 
 .uk-navbar-dropdown-nav .uk-nav-sub a:hover {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 .uk-navbar-dropdown-nav .uk-nav-sub li.uk-active > a {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* Dropbar
  ========================================================================== */
 .uk-navbar-dropbar {
-  background: #FEFCF7;
+  background: #fefcf7;
 }
 
 /*
@@ -6614,7 +6636,7 @@ ul.uk-nav-sub {
      -moz-column-gap: 0.25em;
           column-gap: 0.25em;
   /* 3 */
-  color: #83888F;
+  color: #83888f;
   font-size: 0.875rem;
   text-transform: uppercase;
   -webkit-transition: 0.1s ease-in-out;
@@ -6625,13 +6647,13 @@ ul.uk-nav-sub {
 
 /* Hover */
 .uk-subnav > * > a:hover {
-  color: #333D4B;
+  color: #333d4b;
   text-decoration: none;
 }
 
 /* Active */
 .uk-subnav > .uk-active > a {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* Divider modifier
@@ -6677,32 +6699,32 @@ ul.uk-nav-sub {
 .uk-subnav-pill > * > :first-child {
   padding: 5px 10px;
   background: transparent;
-  color: #83888F;
+  color: #83888f;
 }
 
 /* Hover */
 .uk-subnav-pill > * > a:hover {
   background-color: #f8f8f8;
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* OnClick */
 .uk-subnav-pill > * > a:active {
   background-color: #f8f8f8;
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* Active */
 .uk-subnav-pill > .uk-active > a {
-  background-color: #0E8784;
-  color: #FEFCF7;
+  background-color: #0e8784;
+  color: #fefcf7;
 }
 
 /* Disabled
  * The same for all style modifiers
  ========================================================================== */
 .uk-subnav > .uk-disabled > a {
-  color: #83888F;
+  color: #83888f;
 }
 
 /* ========================================================================
@@ -6727,12 +6749,12 @@ ul.uk-nav-sub {
  ========================================================================== */
 .uk-breadcrumb > * > * {
   font-size: 0.875rem;
-  color: #83888F;
+  color: #83888f;
 }
 
 /* Hover */
 .uk-breadcrumb > * > :hover {
-  color: #333D4B;
+  color: #333d4b;
   text-decoration: none;
 }
 
@@ -6740,7 +6762,7 @@ ul.uk-nav-sub {
 /* Active */
 .uk-breadcrumb > :last-child > span,
 .uk-breadcrumb > :last-child > a:not([href]) {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /*
@@ -6756,7 +6778,7 @@ ul.uk-nav-sub {
   margin: 0 20px 0 calc(20px - 4px);
   /* 2 */
   font-size: 0.875rem;
-  color: #83888F;
+  color: #83888f;
 }
 
 /* ========================================================================
@@ -6808,25 +6830,25 @@ ul.uk-nav-sub {
   display: block;
   /* 2 */
   padding: 5px 10px;
-  color: #83888F;
+  color: #83888f;
   -webkit-transition: color 0.1s ease-in-out;
   transition: color 0.1s ease-in-out;
 }
 
 /* Hover */
 .uk-pagination > * > :hover {
-  color: #333D4B;
+  color: #333d4b;
   text-decoration: none;
 }
 
 /* Active */
 .uk-pagination > .uk-active > * {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* Disabled */
 .uk-pagination > .uk-disabled > * {
-  color: #83888F;
+  color: #83888f;
 }
 
 /* ========================================================================
@@ -6903,7 +6925,7 @@ ul.uk-nav-sub {
           justify-content: center;
   /* 4 */
   padding: 5px 10px;
-  color: #83888F;
+  color: #83888f;
   border-bottom: 1px solid transparent;
   font-size: 0.875rem;
   text-transform: uppercase;
@@ -6913,19 +6935,19 @@ ul.uk-nav-sub {
 
 /* Hover */
 .uk-tab > * > a:hover {
-  color: #333D4B;
+  color: #333d4b;
   text-decoration: none;
 }
 
 /* Active */
 .uk-tab > .uk-active > a {
-  color: #333D4B;
-  border-color: #0E8784;
+  color: #333d4b;
+  border-color: #0e8784;
 }
 
 /* Disabled */
 .uk-tab > .uk-disabled > a {
-  color: #83888F;
+  color: #83888f;
 }
 
 /* Position modifier
@@ -7291,7 +7313,7 @@ ul.uk-nav-sub {
   /* 3 */
   line-height: 0;
   /* 4 */
-  color: #83888F;
+  color: #83888f;
   /* 5 */
   text-decoration: none;
   font-size: 0.875rem;
@@ -7303,12 +7325,12 @@ ul.uk-nav-sub {
 
 /* Hover */
 .uk-iconnav > * > a:hover {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* Active */
 .uk-iconnav > .uk-active > a {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /* Modifier: 'uk-iconnav-vertical'
@@ -8842,19 +8864,19 @@ ul.uk-nav-sub {
 .uk-text-lead {
   font-size: 1.5rem;
   line-height: 1.5;
-  color: #333D4B;
+  color: #333d4b;
 }
 
 .uk-text-meta {
   font-size: 0.875rem;
   line-height: 1.4;
-  color: #83888F;
+  color: #83888f;
 }
 .uk-text-meta a {
-  color: #83888F;
+  color: #83888f;
 }
 .uk-text-meta a:hover {
-  color: #333D4B;
+  color: #333d4b;
   text-decoration: none;
 }
 
@@ -8926,19 +8948,19 @@ ul.uk-nav-sub {
 /* Color modifiers
  ========================================================================== */
 .uk-text-muted {
-  color: #83888F !important;
+  color: #83888f !important;
 }
 
 .uk-text-emphasis {
-  color: #333D4B !important;
+  color: #333d4b !important;
 }
 
 .uk-text-primary {
-  color: #0E8784 !important;
+  color: #0e8784 !important;
 }
 
 .uk-text-secondary {
-  color: #2C343E !important;
+  color: #2c343e !important;
 }
 
 .uk-text-success {
@@ -8946,7 +8968,7 @@ ul.uk-nav-sub {
 }
 
 .uk-text-warning {
-  color: #FDD6BA !important;
+  color: #fdd6ba !important;
 }
 
 .uk-text-danger {
@@ -8967,12 +8989,12 @@ ul.uk-nav-sub {
   /* 2 */
   display: inline-block;
   /* 3 */
-  color: #0E8784 !important;
+  color: #0e8784 !important;
 }
 
 @supports (-webkit-background-clip: text) {
   .uk-text-background {
-    background-color: #0E8784;
+    background-color: #0e8784;
     color: transparent !important;
   }
 }
@@ -9385,7 +9407,7 @@ iframe[data-uk-cover] {
 /* Color
  ========================================================================== */
 .uk-background-default {
-  background-color: #FEFCF7;
+  background-color: #fefcf7;
 }
 
 .uk-background-muted {
@@ -9393,11 +9415,11 @@ iframe[data-uk-cover] {
 }
 
 .uk-background-primary {
-  background-color: #0E8784;
+  background-color: #0e8784;
 }
 
 .uk-background-secondary {
-  background-color: #2C343E;
+  background-color: #2c343e;
 }
 
 /* Size
@@ -10055,14 +10077,14 @@ iframe[data-uk-cover] {
 .uk-logo {
   font-size: 1.5rem;
   font-family: "Barlow", sans-serif;
-  color: #333D4B;
+  color: #333d4b;
   /* 1 */
   text-decoration: none;
 }
 
 /* Hover */
 .uk-logo:hover {
-  color: #333D4B;
+  color: #333d4b;
   /* 1 */
   text-decoration: none;
 }
@@ -11529,7 +11551,7 @@ iframe[data-uk-cover] {
 .uk-card-secondary > :not([class*=uk-card-media]) .uk-link,
 .uk-overlay-primary .uk-link,
 .uk-offcanvas-bar .uk-link {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 .uk-light a:hover, .uk-section-primary:not(.uk-preserve-color) a:hover, .uk-section-secondary:not(.uk-preserve-color) a:hover, .uk-tile-primary:not(.uk-preserve-color) a:hover, .uk-tile-secondary:not(.uk-preserve-color) a:hover, .uk-card-primary.uk-card-body a:hover, .uk-card-primary > :not([class*=uk-card-media]) a:hover, .uk-card-secondary.uk-card-body a:hover, .uk-card-secondary > :not([class*=uk-card-media]) a:hover, .uk-overlay-primary a:hover, .uk-offcanvas-bar a:hover,
 .uk-light .uk-link:hover,
@@ -11554,7 +11576,7 @@ iframe[data-uk-cover] {
 .uk-card-secondary > :not([class*=uk-card-media]) .uk-link-toggle:hover .uk-link,
 .uk-overlay-primary .uk-link-toggle:hover .uk-link,
 .uk-offcanvas-bar .uk-link-toggle:hover .uk-link {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 .uk-light :not(pre) > code, .uk-section-primary:not(.uk-preserve-color) :not(pre) > code, .uk-section-secondary:not(.uk-preserve-color) :not(pre) > code, .uk-tile-primary:not(.uk-preserve-color) :not(pre) > code, .uk-tile-secondary:not(.uk-preserve-color) :not(pre) > code, .uk-card-primary.uk-card-body :not(pre) > code, .uk-card-primary > :not([class*=uk-card-media]) :not(pre) > code, .uk-card-secondary.uk-card-body :not(pre) > code, .uk-card-secondary > :not([class*=uk-card-media]) :not(pre) > code, .uk-overlay-primary :not(pre) > code, .uk-offcanvas-bar :not(pre) > code,
 .uk-light :not(pre) > kbd,
@@ -11583,7 +11605,7 @@ iframe[data-uk-cover] {
   background: rgba(254, 252, 247, 0.1);
 }
 .uk-light em, .uk-section-primary:not(.uk-preserve-color) em, .uk-section-secondary:not(.uk-preserve-color) em, .uk-tile-primary:not(.uk-preserve-color) em, .uk-tile-secondary:not(.uk-preserve-color) em, .uk-card-primary.uk-card-body em, .uk-card-primary > :not([class*=uk-card-media]) em, .uk-card-secondary.uk-card-body em, .uk-card-secondary > :not([class*=uk-card-media]) em, .uk-overlay-primary em, .uk-offcanvas-bar em {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 .uk-light h1, .uk-section-primary:not(.uk-preserve-color) h1, .uk-section-secondary:not(.uk-preserve-color) h1, .uk-tile-primary:not(.uk-preserve-color) h1, .uk-tile-secondary:not(.uk-preserve-color) h1, .uk-card-primary.uk-card-body h1, .uk-card-primary > :not([class*=uk-card-media]) h1, .uk-card-secondary.uk-card-body h1, .uk-card-secondary > :not([class*=uk-card-media]) h1, .uk-overlay-primary h1, .uk-offcanvas-bar h1, .uk-light .uk-h1, .uk-section-primary:not(.uk-preserve-color) .uk-h1, .uk-section-secondary:not(.uk-preserve-color) .uk-h1, .uk-tile-primary:not(.uk-preserve-color) .uk-h1, .uk-tile-secondary:not(.uk-preserve-color) .uk-h1, .uk-card-primary.uk-card-body .uk-h1, .uk-card-primary > :not([class*=uk-card-media]) .uk-h1, .uk-card-secondary.uk-card-body .uk-h1, .uk-card-secondary > :not([class*=uk-card-media]) .uk-h1, .uk-overlay-primary .uk-h1, .uk-offcanvas-bar .uk-h1,
 .uk-light h2,
@@ -11696,10 +11718,10 @@ iframe[data-uk-cover] {
 .uk-card-secondary > :not([class*=uk-card-media]) .uk-heading-2xlarge,
 .uk-overlay-primary .uk-heading-2xlarge,
 .uk-offcanvas-bar .uk-heading-2xlarge {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 .uk-light blockquote, .uk-section-primary:not(.uk-preserve-color) blockquote, .uk-section-secondary:not(.uk-preserve-color) blockquote, .uk-tile-primary:not(.uk-preserve-color) blockquote, .uk-tile-secondary:not(.uk-preserve-color) blockquote, .uk-card-primary.uk-card-body blockquote, .uk-card-primary > :not([class*=uk-card-media]) blockquote, .uk-card-secondary.uk-card-body blockquote, .uk-card-secondary > :not([class*=uk-card-media]) blockquote, .uk-overlay-primary blockquote, .uk-offcanvas-bar blockquote {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 .uk-light blockquote footer, .uk-section-primary:not(.uk-preserve-color) blockquote footer, .uk-section-secondary:not(.uk-preserve-color) blockquote footer, .uk-tile-primary:not(.uk-preserve-color) blockquote footer, .uk-tile-secondary:not(.uk-preserve-color) blockquote footer, .uk-card-primary.uk-card-body blockquote footer, .uk-card-primary > :not([class*=uk-card-media]) blockquote footer, .uk-card-secondary.uk-card-body blockquote footer, .uk-card-secondary > :not([class*=uk-card-media]) blockquote footer, .uk-overlay-primary blockquote footer, .uk-offcanvas-bar blockquote footer {
   color: rgba(254, 252, 247, 0.7);
@@ -11708,10 +11730,10 @@ iframe[data-uk-cover] {
   border-top-color: rgba(254, 252, 247, 0.2);
 }
 .uk-light :focus, .uk-section-primary:not(.uk-preserve-color) :focus, .uk-section-secondary:not(.uk-preserve-color) :focus, .uk-tile-primary:not(.uk-preserve-color) :focus, .uk-tile-secondary:not(.uk-preserve-color) :focus, .uk-card-primary.uk-card-body :focus, .uk-card-primary > :not([class*=uk-card-media]) :focus, .uk-card-secondary.uk-card-body :focus, .uk-card-secondary > :not([class*=uk-card-media]) :focus, .uk-overlay-primary :focus, .uk-offcanvas-bar :focus {
-  outline-color: #FEFCF7;
+  outline-color: #fefcf7;
 }
 .uk-light :focus-visible, .uk-section-primary:not(.uk-preserve-color) :focus-visible, .uk-section-secondary:not(.uk-preserve-color) :focus-visible, .uk-tile-primary:not(.uk-preserve-color) :focus-visible, .uk-tile-secondary:not(.uk-preserve-color) :focus-visible, .uk-card-primary.uk-card-body :focus-visible, .uk-card-primary > :not([class*=uk-card-media]) :focus-visible, .uk-card-secondary.uk-card-body :focus-visible, .uk-card-secondary > :not([class*=uk-card-media]) :focus-visible, .uk-overlay-primary :focus-visible, .uk-offcanvas-bar :focus-visible {
-  outline-color: #FEFCF7;
+  outline-color: #fefcf7;
 }
 .uk-light a.uk-link-muted, .uk-section-primary:not(.uk-preserve-color) a.uk-link-muted, .uk-section-secondary:not(.uk-preserve-color) a.uk-link-muted, .uk-tile-primary:not(.uk-preserve-color) a.uk-link-muted, .uk-tile-secondary:not(.uk-preserve-color) a.uk-link-muted, .uk-card-primary.uk-card-body a.uk-link-muted, .uk-card-primary > :not([class*=uk-card-media]) a.uk-link-muted, .uk-card-secondary.uk-card-body a.uk-link-muted, .uk-card-secondary > :not([class*=uk-card-media]) a.uk-link-muted, .uk-overlay-primary a.uk-link-muted, .uk-offcanvas-bar a.uk-link-muted,
 .uk-light .uk-link-muted a,
@@ -11800,7 +11822,7 @@ iframe[data-uk-cover] {
 .uk-card-secondary > :not([class*=uk-card-media]) .uk-link-toggle:hover .uk-link-heading,
 .uk-overlay-primary .uk-link-toggle:hover .uk-link-heading,
 .uk-offcanvas-bar .uk-link-toggle:hover .uk-link-heading {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 .uk-light .uk-heading-divider, .uk-section-primary:not(.uk-preserve-color) .uk-heading-divider, .uk-section-secondary:not(.uk-preserve-color) .uk-heading-divider, .uk-tile-primary:not(.uk-preserve-color) .uk-heading-divider, .uk-tile-secondary:not(.uk-preserve-color) .uk-heading-divider, .uk-card-primary.uk-card-body .uk-heading-divider, .uk-card-primary > :not([class*=uk-card-media]) .uk-heading-divider, .uk-card-secondary.uk-card-body .uk-heading-divider, .uk-card-secondary > :not([class*=uk-card-media]) .uk-heading-divider, .uk-overlay-primary .uk-heading-divider, .uk-offcanvas-bar .uk-heading-divider {
   border-bottom-color: rgba(254, 252, 247, 0.2);
@@ -11849,13 +11871,13 @@ iframe[data-uk-cover] {
   color: rgba(254, 252, 247, 0.5) !important;
 }
 .uk-light .uk-list-emphasis > ::before, .uk-section-primary:not(.uk-preserve-color) .uk-list-emphasis > ::before, .uk-section-secondary:not(.uk-preserve-color) .uk-list-emphasis > ::before, .uk-tile-primary:not(.uk-preserve-color) .uk-list-emphasis > ::before, .uk-tile-secondary:not(.uk-preserve-color) .uk-list-emphasis > ::before, .uk-card-primary.uk-card-body .uk-list-emphasis > ::before, .uk-card-primary > :not([class*=uk-card-media]) .uk-list-emphasis > ::before, .uk-card-secondary.uk-card-body .uk-list-emphasis > ::before, .uk-card-secondary > :not([class*=uk-card-media]) .uk-list-emphasis > ::before, .uk-overlay-primary .uk-list-emphasis > ::before, .uk-offcanvas-bar .uk-list-emphasis > ::before {
-  color: #FEFCF7 !important;
+  color: #fefcf7 !important;
 }
 .uk-light .uk-list-primary > ::before, .uk-section-primary:not(.uk-preserve-color) .uk-list-primary > ::before, .uk-section-secondary:not(.uk-preserve-color) .uk-list-primary > ::before, .uk-tile-primary:not(.uk-preserve-color) .uk-list-primary > ::before, .uk-tile-secondary:not(.uk-preserve-color) .uk-list-primary > ::before, .uk-card-primary.uk-card-body .uk-list-primary > ::before, .uk-card-primary > :not([class*=uk-card-media]) .uk-list-primary > ::before, .uk-card-secondary.uk-card-body .uk-list-primary > ::before, .uk-card-secondary > :not([class*=uk-card-media]) .uk-list-primary > ::before, .uk-overlay-primary .uk-list-primary > ::before, .uk-offcanvas-bar .uk-list-primary > ::before {
-  color: #FEFCF7 !important;
+  color: #fefcf7 !important;
 }
 .uk-light .uk-list-secondary > ::before, .uk-section-primary:not(.uk-preserve-color) .uk-list-secondary > ::before, .uk-section-secondary:not(.uk-preserve-color) .uk-list-secondary > ::before, .uk-tile-primary:not(.uk-preserve-color) .uk-list-secondary > ::before, .uk-tile-secondary:not(.uk-preserve-color) .uk-list-secondary > ::before, .uk-card-primary.uk-card-body .uk-list-secondary > ::before, .uk-card-primary > :not([class*=uk-card-media]) .uk-list-secondary > ::before, .uk-card-secondary.uk-card-body .uk-list-secondary > ::before, .uk-card-secondary > :not([class*=uk-card-media]) .uk-list-secondary > ::before, .uk-overlay-primary .uk-list-secondary > ::before, .uk-offcanvas-bar .uk-list-secondary > ::before {
-  color: #FEFCF7 !important;
+  color: #fefcf7 !important;
 }
 .uk-light .uk-list-bullet > ::before, .uk-section-primary:not(.uk-preserve-color) .uk-list-bullet > ::before, .uk-section-secondary:not(.uk-preserve-color) .uk-list-bullet > ::before, .uk-tile-primary:not(.uk-preserve-color) .uk-list-bullet > ::before, .uk-tile-secondary:not(.uk-preserve-color) .uk-list-bullet > ::before, .uk-card-primary.uk-card-body .uk-list-bullet > ::before, .uk-card-primary > :not([class*=uk-card-media]) .uk-list-bullet > ::before, .uk-card-secondary.uk-card-body .uk-list-bullet > ::before, .uk-card-secondary > :not([class*=uk-card-media]) .uk-list-bullet > ::before, .uk-overlay-primary .uk-list-bullet > ::before, .uk-offcanvas-bar .uk-list-bullet > ::before {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%226%22%20height%3D%226%22%20viewBox%3D%220%200%206%206%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22rgba(254, 252, 247, 0.7)%22%20cx%3D%223%22%20cy%3D%223%22%20r%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E");
@@ -12057,7 +12079,7 @@ iframe[data-uk-cover] {
 .uk-card-secondary > :not([class*=uk-card-media]) .uk-checkbox:indeterminate,
 .uk-overlay-primary .uk-checkbox:indeterminate,
 .uk-offcanvas-bar .uk-checkbox:indeterminate {
-  background-color: #FEFCF7;
+  background-color: #fefcf7;
   border-color: rgba(254, 252, 247, 0.7);
 }
 .uk-light .uk-radio:checked:focus, .uk-section-primary:not(.uk-preserve-color) .uk-radio:checked:focus, .uk-section-secondary:not(.uk-preserve-color) .uk-radio:checked:focus, .uk-tile-primary:not(.uk-preserve-color) .uk-radio:checked:focus, .uk-tile-secondary:not(.uk-preserve-color) .uk-radio:checked:focus, .uk-card-primary.uk-card-body .uk-radio:checked:focus, .uk-card-primary > :not([class*=uk-card-media]) .uk-radio:checked:focus, .uk-card-secondary.uk-card-body .uk-radio:checked:focus, .uk-card-secondary > :not([class*=uk-card-media]) .uk-radio:checked:focus, .uk-overlay-primary .uk-radio:checked:focus, .uk-offcanvas-bar .uk-radio:checked:focus,
@@ -12083,19 +12105,19 @@ iframe[data-uk-cover] {
 .uk-card-secondary > :not([class*=uk-card-media]) .uk-checkbox:indeterminate:focus,
 .uk-overlay-primary .uk-checkbox:indeterminate:focus,
 .uk-offcanvas-bar .uk-checkbox:indeterminate:focus {
-  background-color: fadein(#FEFCF7, 10%);
+  background-color: fadein(#fefcf7, 10%);
 }
 .uk-light .uk-radio:checked, .uk-section-primary:not(.uk-preserve-color) .uk-radio:checked, .uk-section-secondary:not(.uk-preserve-color) .uk-radio:checked, .uk-tile-primary:not(.uk-preserve-color) .uk-radio:checked, .uk-tile-secondary:not(.uk-preserve-color) .uk-radio:checked, .uk-card-primary.uk-card-body .uk-radio:checked, .uk-card-primary > :not([class*=uk-card-media]) .uk-radio:checked, .uk-card-secondary.uk-card-body .uk-radio:checked, .uk-card-secondary > :not([class*=uk-card-media]) .uk-radio:checked, .uk-overlay-primary .uk-radio:checked, .uk-offcanvas-bar .uk-radio:checked {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22%23333D4B%22%20cx%3D%228%22%20cy%3D%228%22%20r%3D%222%22%20%2F%3E%0A%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22%23333d4b%22%20cx%3D%228%22%20cy%3D%228%22%20r%3D%222%22%20%2F%3E%0A%3C%2Fsvg%3E");
 }
 .uk-light .uk-checkbox:checked, .uk-section-primary:not(.uk-preserve-color) .uk-checkbox:checked, .uk-section-secondary:not(.uk-preserve-color) .uk-checkbox:checked, .uk-tile-primary:not(.uk-preserve-color) .uk-checkbox:checked, .uk-tile-secondary:not(.uk-preserve-color) .uk-checkbox:checked, .uk-card-primary.uk-card-body .uk-checkbox:checked, .uk-card-primary > :not([class*=uk-card-media]) .uk-checkbox:checked, .uk-card-secondary.uk-card-body .uk-checkbox:checked, .uk-card-secondary > :not([class*=uk-card-media]) .uk-checkbox:checked, .uk-overlay-primary .uk-checkbox:checked, .uk-offcanvas-bar .uk-checkbox:checked {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23333D4B%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23333d4b%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 .uk-light .uk-checkbox:indeterminate, .uk-section-primary:not(.uk-preserve-color) .uk-checkbox:indeterminate, .uk-section-secondary:not(.uk-preserve-color) .uk-checkbox:indeterminate, .uk-tile-primary:not(.uk-preserve-color) .uk-checkbox:indeterminate, .uk-tile-secondary:not(.uk-preserve-color) .uk-checkbox:indeterminate, .uk-card-primary.uk-card-body .uk-checkbox:indeterminate, .uk-card-primary > :not([class*=uk-card-media]) .uk-checkbox:indeterminate, .uk-card-secondary.uk-card-body .uk-checkbox:indeterminate, .uk-card-secondary > :not([class*=uk-card-media]) .uk-checkbox:indeterminate, .uk-overlay-primary .uk-checkbox:indeterminate, .uk-offcanvas-bar .uk-checkbox:indeterminate {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23333D4B%22%20x%3D%223%22%20y%3D%228%22%20width%3D%2210%22%20height%3D%221%22%20%2F%3E%0A%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23333d4b%22%20x%3D%223%22%20y%3D%228%22%20width%3D%2210%22%20height%3D%221%22%20%2F%3E%0A%3C%2Fsvg%3E");
 }
 .uk-light .uk-form-label, .uk-section-primary:not(.uk-preserve-color) .uk-form-label, .uk-section-secondary:not(.uk-preserve-color) .uk-form-label, .uk-tile-primary:not(.uk-preserve-color) .uk-form-label, .uk-tile-secondary:not(.uk-preserve-color) .uk-form-label, .uk-card-primary.uk-card-body .uk-form-label, .uk-card-primary > :not([class*=uk-card-media]) .uk-form-label, .uk-card-secondary.uk-card-body .uk-form-label, .uk-card-secondary > :not([class*=uk-card-media]) .uk-form-label, .uk-overlay-primary .uk-form-label, .uk-offcanvas-bar .uk-form-label {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 .uk-light .uk-form-icon, .uk-section-primary:not(.uk-preserve-color) .uk-form-icon, .uk-section-secondary:not(.uk-preserve-color) .uk-form-icon, .uk-tile-primary:not(.uk-preserve-color) .uk-form-icon, .uk-tile-secondary:not(.uk-preserve-color) .uk-form-icon, .uk-card-primary.uk-card-body .uk-form-icon, .uk-card-primary > :not([class*=uk-card-media]) .uk-form-icon, .uk-card-secondary.uk-card-body .uk-form-icon, .uk-card-secondary > :not([class*=uk-card-media]) .uk-form-icon, .uk-overlay-primary .uk-form-icon, .uk-offcanvas-bar .uk-form-icon {
   color: rgba(254, 252, 247, 0.5);
@@ -12105,13 +12127,13 @@ iframe[data-uk-cover] {
 }
 .uk-light .uk-button-default, .uk-section-primary:not(.uk-preserve-color) .uk-button-default, .uk-section-secondary:not(.uk-preserve-color) .uk-button-default, .uk-tile-primary:not(.uk-preserve-color) .uk-button-default, .uk-tile-secondary:not(.uk-preserve-color) .uk-button-default, .uk-card-primary.uk-card-body .uk-button-default, .uk-card-primary > :not([class*=uk-card-media]) .uk-button-default, .uk-card-secondary.uk-card-body .uk-button-default, .uk-card-secondary > :not([class*=uk-card-media]) .uk-button-default, .uk-overlay-primary .uk-button-default, .uk-offcanvas-bar .uk-button-default {
   background-color: transparent;
-  color: #FEFCF7;
+  color: #fefcf7;
   border-color: rgba(254, 252, 247, 0.7);
 }
 .uk-light .uk-button-default:hover, .uk-section-primary:not(.uk-preserve-color) .uk-button-default:hover, .uk-section-secondary:not(.uk-preserve-color) .uk-button-default:hover, .uk-tile-primary:not(.uk-preserve-color) .uk-button-default:hover, .uk-tile-secondary:not(.uk-preserve-color) .uk-button-default:hover, .uk-card-primary.uk-card-body .uk-button-default:hover, .uk-card-primary > :not([class*=uk-card-media]) .uk-button-default:hover, .uk-card-secondary.uk-card-body .uk-button-default:hover, .uk-card-secondary > :not([class*=uk-card-media]) .uk-button-default:hover, .uk-overlay-primary .uk-button-default:hover, .uk-offcanvas-bar .uk-button-default:hover {
   background-color: transparent;
-  color: #FEFCF7;
-  border-color: #FEFCF7;
+  color: #fefcf7;
+  border-color: #fefcf7;
 }
 .uk-light .uk-button-default:active, .uk-section-primary:not(.uk-preserve-color) .uk-button-default:active, .uk-section-secondary:not(.uk-preserve-color) .uk-button-default:active, .uk-tile-primary:not(.uk-preserve-color) .uk-button-default:active, .uk-tile-secondary:not(.uk-preserve-color) .uk-button-default:active, .uk-card-primary.uk-card-body .uk-button-default:active, .uk-card-primary > :not([class*=uk-card-media]) .uk-button-default:active, .uk-card-secondary.uk-card-body .uk-button-default:active, .uk-card-secondary > :not([class*=uk-card-media]) .uk-button-default:active, .uk-overlay-primary .uk-button-default:active, .uk-offcanvas-bar .uk-button-default:active,
 .uk-light .uk-button-default.uk-active,
@@ -12126,16 +12148,16 @@ iframe[data-uk-cover] {
 .uk-overlay-primary .uk-button-default.uk-active,
 .uk-offcanvas-bar .uk-button-default.uk-active {
   background-color: transparent;
-  color: #FEFCF7;
-  border-color: #FEFCF7;
+  color: #fefcf7;
+  border-color: #fefcf7;
 }
 .uk-light .uk-button-primary, .uk-section-primary:not(.uk-preserve-color) .uk-button-primary, .uk-section-secondary:not(.uk-preserve-color) .uk-button-primary, .uk-tile-primary:not(.uk-preserve-color) .uk-button-primary, .uk-tile-secondary:not(.uk-preserve-color) .uk-button-primary, .uk-card-primary.uk-card-body .uk-button-primary, .uk-card-primary > :not([class*=uk-card-media]) .uk-button-primary, .uk-card-secondary.uk-card-body .uk-button-primary, .uk-card-secondary > :not([class*=uk-card-media]) .uk-button-primary, .uk-overlay-primary .uk-button-primary, .uk-offcanvas-bar .uk-button-primary {
-  background-color: #FEFCF7;
-  color: #333D4B;
+  background-color: #fefcf7;
+  color: #333d4b;
 }
 .uk-light .uk-button-primary:hover, .uk-section-primary:not(.uk-preserve-color) .uk-button-primary:hover, .uk-section-secondary:not(.uk-preserve-color) .uk-button-primary:hover, .uk-tile-primary:not(.uk-preserve-color) .uk-button-primary:hover, .uk-tile-secondary:not(.uk-preserve-color) .uk-button-primary:hover, .uk-card-primary.uk-card-body .uk-button-primary:hover, .uk-card-primary > :not([class*=uk-card-media]) .uk-button-primary:hover, .uk-card-secondary.uk-card-body .uk-button-primary:hover, .uk-card-secondary > :not([class*=uk-card-media]) .uk-button-primary:hover, .uk-overlay-primary .uk-button-primary:hover, .uk-offcanvas-bar .uk-button-primary:hover {
   background-color: #fbf4e0;
-  color: #333D4B;
+  color: #333d4b;
 }
 .uk-light .uk-button-primary:active, .uk-section-primary:not(.uk-preserve-color) .uk-button-primary:active, .uk-section-secondary:not(.uk-preserve-color) .uk-button-primary:active, .uk-tile-primary:not(.uk-preserve-color) .uk-button-primary:active, .uk-tile-secondary:not(.uk-preserve-color) .uk-button-primary:active, .uk-card-primary.uk-card-body .uk-button-primary:active, .uk-card-primary > :not([class*=uk-card-media]) .uk-button-primary:active, .uk-card-secondary.uk-card-body .uk-button-primary:active, .uk-card-secondary > :not([class*=uk-card-media]) .uk-button-primary:active, .uk-overlay-primary .uk-button-primary:active, .uk-offcanvas-bar .uk-button-primary:active,
 .uk-light .uk-button-primary.uk-active,
@@ -12150,15 +12172,15 @@ iframe[data-uk-cover] {
 .uk-overlay-primary .uk-button-primary.uk-active,
 .uk-offcanvas-bar .uk-button-primary.uk-active {
   background-color: #f8ebca;
-  color: #333D4B;
+  color: #333d4b;
 }
 .uk-light .uk-button-secondary, .uk-section-primary:not(.uk-preserve-color) .uk-button-secondary, .uk-section-secondary:not(.uk-preserve-color) .uk-button-secondary, .uk-tile-primary:not(.uk-preserve-color) .uk-button-secondary, .uk-tile-secondary:not(.uk-preserve-color) .uk-button-secondary, .uk-card-primary.uk-card-body .uk-button-secondary, .uk-card-primary > :not([class*=uk-card-media]) .uk-button-secondary, .uk-card-secondary.uk-card-body .uk-button-secondary, .uk-card-secondary > :not([class*=uk-card-media]) .uk-button-secondary, .uk-overlay-primary .uk-button-secondary, .uk-offcanvas-bar .uk-button-secondary {
-  background-color: #FEFCF7;
-  color: #333D4B;
+  background-color: #fefcf7;
+  color: #333d4b;
 }
 .uk-light .uk-button-secondary:hover, .uk-section-primary:not(.uk-preserve-color) .uk-button-secondary:hover, .uk-section-secondary:not(.uk-preserve-color) .uk-button-secondary:hover, .uk-tile-primary:not(.uk-preserve-color) .uk-button-secondary:hover, .uk-tile-secondary:not(.uk-preserve-color) .uk-button-secondary:hover, .uk-card-primary.uk-card-body .uk-button-secondary:hover, .uk-card-primary > :not([class*=uk-card-media]) .uk-button-secondary:hover, .uk-card-secondary.uk-card-body .uk-button-secondary:hover, .uk-card-secondary > :not([class*=uk-card-media]) .uk-button-secondary:hover, .uk-overlay-primary .uk-button-secondary:hover, .uk-offcanvas-bar .uk-button-secondary:hover {
   background-color: #fbf4e0;
-  color: #333D4B;
+  color: #333d4b;
 }
 .uk-light .uk-button-secondary:active, .uk-section-primary:not(.uk-preserve-color) .uk-button-secondary:active, .uk-section-secondary:not(.uk-preserve-color) .uk-button-secondary:active, .uk-tile-primary:not(.uk-preserve-color) .uk-button-secondary:active, .uk-tile-secondary:not(.uk-preserve-color) .uk-button-secondary:active, .uk-card-primary.uk-card-body .uk-button-secondary:active, .uk-card-primary > :not([class*=uk-card-media]) .uk-button-secondary:active, .uk-card-secondary.uk-card-body .uk-button-secondary:active, .uk-card-secondary > :not([class*=uk-card-media]) .uk-button-secondary:active, .uk-overlay-primary .uk-button-secondary:active, .uk-offcanvas-bar .uk-button-secondary:active,
 .uk-light .uk-button-secondary.uk-active,
@@ -12173,22 +12195,22 @@ iframe[data-uk-cover] {
 .uk-overlay-primary .uk-button-secondary.uk-active,
 .uk-offcanvas-bar .uk-button-secondary.uk-active {
   background-color: #f8ebca;
-  color: #333D4B;
+  color: #333d4b;
 }
 .uk-light .uk-button-text, .uk-section-primary:not(.uk-preserve-color) .uk-button-text, .uk-section-secondary:not(.uk-preserve-color) .uk-button-text, .uk-tile-primary:not(.uk-preserve-color) .uk-button-text, .uk-tile-secondary:not(.uk-preserve-color) .uk-button-text, .uk-card-primary.uk-card-body .uk-button-text, .uk-card-primary > :not([class*=uk-card-media]) .uk-button-text, .uk-card-secondary.uk-card-body .uk-button-text, .uk-card-secondary > :not([class*=uk-card-media]) .uk-button-text, .uk-overlay-primary .uk-button-text, .uk-offcanvas-bar .uk-button-text {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 .uk-light .uk-button-text::before, .uk-section-primary:not(.uk-preserve-color) .uk-button-text::before, .uk-section-secondary:not(.uk-preserve-color) .uk-button-text::before, .uk-tile-primary:not(.uk-preserve-color) .uk-button-text::before, .uk-tile-secondary:not(.uk-preserve-color) .uk-button-text::before, .uk-card-primary.uk-card-body .uk-button-text::before, .uk-card-primary > :not([class*=uk-card-media]) .uk-button-text::before, .uk-card-secondary.uk-card-body .uk-button-text::before, .uk-card-secondary > :not([class*=uk-card-media]) .uk-button-text::before, .uk-overlay-primary .uk-button-text::before, .uk-offcanvas-bar .uk-button-text::before {
-  border-bottom-color: #FEFCF7;
+  border-bottom-color: #fefcf7;
 }
 .uk-light .uk-button-text:hover, .uk-section-primary:not(.uk-preserve-color) .uk-button-text:hover, .uk-section-secondary:not(.uk-preserve-color) .uk-button-text:hover, .uk-tile-primary:not(.uk-preserve-color) .uk-button-text:hover, .uk-tile-secondary:not(.uk-preserve-color) .uk-button-text:hover, .uk-card-primary.uk-card-body .uk-button-text:hover, .uk-card-primary > :not([class*=uk-card-media]) .uk-button-text:hover, .uk-card-secondary.uk-card-body .uk-button-text:hover, .uk-card-secondary > :not([class*=uk-card-media]) .uk-button-text:hover, .uk-overlay-primary .uk-button-text:hover, .uk-offcanvas-bar .uk-button-text:hover {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 .uk-light .uk-button-text:disabled, .uk-section-primary:not(.uk-preserve-color) .uk-button-text:disabled, .uk-section-secondary:not(.uk-preserve-color) .uk-button-text:disabled, .uk-tile-primary:not(.uk-preserve-color) .uk-button-text:disabled, .uk-tile-secondary:not(.uk-preserve-color) .uk-button-text:disabled, .uk-card-primary.uk-card-body .uk-button-text:disabled, .uk-card-primary > :not([class*=uk-card-media]) .uk-button-text:disabled, .uk-card-secondary.uk-card-body .uk-button-text:disabled, .uk-card-secondary > :not([class*=uk-card-media]) .uk-button-text:disabled, .uk-overlay-primary .uk-button-text:disabled, .uk-offcanvas-bar .uk-button-text:disabled {
   color: rgba(254, 252, 247, 0.5);
 }
 .uk-light .uk-button-link, .uk-section-primary:not(.uk-preserve-color) .uk-button-link, .uk-section-secondary:not(.uk-preserve-color) .uk-button-link, .uk-tile-primary:not(.uk-preserve-color) .uk-button-link, .uk-tile-secondary:not(.uk-preserve-color) .uk-button-link, .uk-card-primary.uk-card-body .uk-button-link, .uk-card-primary > :not([class*=uk-card-media]) .uk-button-link, .uk-card-secondary.uk-card-body .uk-button-link, .uk-card-secondary > :not([class*=uk-card-media]) .uk-button-link, .uk-overlay-primary .uk-button-link, .uk-offcanvas-bar .uk-button-link {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 .uk-light .uk-button-link:hover, .uk-section-primary:not(.uk-preserve-color) .uk-button-link:hover, .uk-section-secondary:not(.uk-preserve-color) .uk-button-link:hover, .uk-tile-primary:not(.uk-preserve-color) .uk-button-link:hover, .uk-tile-secondary:not(.uk-preserve-color) .uk-button-link:hover, .uk-card-primary.uk-card-body .uk-button-link:hover, .uk-card-primary > :not([class*=uk-card-media]) .uk-button-link:hover, .uk-card-secondary.uk-card-body .uk-button-link:hover, .uk-card-secondary > :not([class*=uk-card-media]) .uk-button-link:hover, .uk-overlay-primary .uk-button-link:hover, .uk-offcanvas-bar .uk-button-link:hover {
   color: rgba(254, 252, 247, 0.5);
@@ -12212,15 +12234,15 @@ iframe[data-uk-cover] {
   color: rgba(254, 252, 247, 0.7);
 }
 .uk-light .uk-totop:active, .uk-section-primary:not(.uk-preserve-color) .uk-totop:active, .uk-section-secondary:not(.uk-preserve-color) .uk-totop:active, .uk-tile-primary:not(.uk-preserve-color) .uk-totop:active, .uk-tile-secondary:not(.uk-preserve-color) .uk-totop:active, .uk-card-primary.uk-card-body .uk-totop:active, .uk-card-primary > :not([class*=uk-card-media]) .uk-totop:active, .uk-card-secondary.uk-card-body .uk-totop:active, .uk-card-secondary > :not([class*=uk-card-media]) .uk-totop:active, .uk-overlay-primary .uk-totop:active, .uk-offcanvas-bar .uk-totop:active {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 .uk-light .uk-badge, .uk-section-primary:not(.uk-preserve-color) .uk-badge, .uk-section-secondary:not(.uk-preserve-color) .uk-badge, .uk-tile-primary:not(.uk-preserve-color) .uk-badge, .uk-tile-secondary:not(.uk-preserve-color) .uk-badge, .uk-card-primary.uk-card-body .uk-badge, .uk-card-primary > :not([class*=uk-card-media]) .uk-badge, .uk-card-secondary.uk-card-body .uk-badge, .uk-card-secondary > :not([class*=uk-card-media]) .uk-badge, .uk-overlay-primary .uk-badge, .uk-offcanvas-bar .uk-badge {
-  background-color: #FEFCF7;
-  color: #333D4B !important;
+  background-color: #fefcf7;
+  color: #333d4b !important;
 }
 .uk-light .uk-label, .uk-section-primary:not(.uk-preserve-color) .uk-label, .uk-section-secondary:not(.uk-preserve-color) .uk-label, .uk-tile-primary:not(.uk-preserve-color) .uk-label, .uk-tile-secondary:not(.uk-preserve-color) .uk-label, .uk-card-primary.uk-card-body .uk-label, .uk-card-primary > :not([class*=uk-card-media]) .uk-label, .uk-card-secondary.uk-card-body .uk-label, .uk-card-secondary > :not([class*=uk-card-media]) .uk-label, .uk-overlay-primary .uk-label, .uk-offcanvas-bar .uk-label {
-  background-color: #FEFCF7;
-  color: #333D4B;
+  background-color: #fefcf7;
+  color: #333d4b;
 }
 .uk-light .uk-article-meta, .uk-section-primary:not(.uk-preserve-color) .uk-article-meta, .uk-section-secondary:not(.uk-preserve-color) .uk-article-meta, .uk-tile-primary:not(.uk-preserve-color) .uk-article-meta, .uk-tile-secondary:not(.uk-preserve-color) .uk-article-meta, .uk-card-primary.uk-card-body .uk-article-meta, .uk-card-primary > :not([class*=uk-card-media]) .uk-article-meta, .uk-card-secondary.uk-card-body .uk-article-meta, .uk-card-secondary > :not([class*=uk-card-media]) .uk-article-meta, .uk-overlay-primary .uk-article-meta, .uk-offcanvas-bar .uk-article-meta {
   color: rgba(254, 252, 247, 0.5);
@@ -12281,10 +12303,10 @@ iframe[data-uk-cover] {
   color: rgba(254, 252, 247, 0.7);
 }
 .uk-light .uk-nav-default > li.uk-active > a, .uk-section-primary:not(.uk-preserve-color) .uk-nav-default > li.uk-active > a, .uk-section-secondary:not(.uk-preserve-color) .uk-nav-default > li.uk-active > a, .uk-tile-primary:not(.uk-preserve-color) .uk-nav-default > li.uk-active > a, .uk-tile-secondary:not(.uk-preserve-color) .uk-nav-default > li.uk-active > a, .uk-card-primary.uk-card-body .uk-nav-default > li.uk-active > a, .uk-card-primary > :not([class*=uk-card-media]) .uk-nav-default > li.uk-active > a, .uk-card-secondary.uk-card-body .uk-nav-default > li.uk-active > a, .uk-card-secondary > :not([class*=uk-card-media]) .uk-nav-default > li.uk-active > a, .uk-overlay-primary .uk-nav-default > li.uk-active > a, .uk-offcanvas-bar .uk-nav-default > li.uk-active > a {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 .uk-light .uk-nav-default .uk-nav-header, .uk-section-primary:not(.uk-preserve-color) .uk-nav-default .uk-nav-header, .uk-section-secondary:not(.uk-preserve-color) .uk-nav-default .uk-nav-header, .uk-tile-primary:not(.uk-preserve-color) .uk-nav-default .uk-nav-header, .uk-tile-secondary:not(.uk-preserve-color) .uk-nav-default .uk-nav-header, .uk-card-primary.uk-card-body .uk-nav-default .uk-nav-header, .uk-card-primary > :not([class*=uk-card-media]) .uk-nav-default .uk-nav-header, .uk-card-secondary.uk-card-body .uk-nav-default .uk-nav-header, .uk-card-secondary > :not([class*=uk-card-media]) .uk-nav-default .uk-nav-header, .uk-overlay-primary .uk-nav-default .uk-nav-header, .uk-offcanvas-bar .uk-nav-default .uk-nav-header {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 .uk-light .uk-nav-default .uk-nav-divider, .uk-section-primary:not(.uk-preserve-color) .uk-nav-default .uk-nav-divider, .uk-section-secondary:not(.uk-preserve-color) .uk-nav-default .uk-nav-divider, .uk-tile-primary:not(.uk-preserve-color) .uk-nav-default .uk-nav-divider, .uk-tile-secondary:not(.uk-preserve-color) .uk-nav-default .uk-nav-divider, .uk-card-primary.uk-card-body .uk-nav-default .uk-nav-divider, .uk-card-primary > :not([class*=uk-card-media]) .uk-nav-default .uk-nav-divider, .uk-card-secondary.uk-card-body .uk-nav-default .uk-nav-divider, .uk-card-secondary > :not([class*=uk-card-media]) .uk-nav-default .uk-nav-divider, .uk-overlay-primary .uk-nav-default .uk-nav-divider, .uk-offcanvas-bar .uk-nav-default .uk-nav-divider {
   border-top-color: rgba(254, 252, 247, 0.2);
@@ -12296,7 +12318,7 @@ iframe[data-uk-cover] {
   color: rgba(254, 252, 247, 0.7);
 }
 .uk-light .uk-nav-default .uk-nav-sub li.uk-active > a, .uk-section-primary:not(.uk-preserve-color) .uk-nav-default .uk-nav-sub li.uk-active > a, .uk-section-secondary:not(.uk-preserve-color) .uk-nav-default .uk-nav-sub li.uk-active > a, .uk-tile-primary:not(.uk-preserve-color) .uk-nav-default .uk-nav-sub li.uk-active > a, .uk-tile-secondary:not(.uk-preserve-color) .uk-nav-default .uk-nav-sub li.uk-active > a, .uk-card-primary.uk-card-body .uk-nav-default .uk-nav-sub li.uk-active > a, .uk-card-primary > :not([class*=uk-card-media]) .uk-nav-default .uk-nav-sub li.uk-active > a, .uk-card-secondary.uk-card-body .uk-nav-default .uk-nav-sub li.uk-active > a, .uk-card-secondary > :not([class*=uk-card-media]) .uk-nav-default .uk-nav-sub li.uk-active > a, .uk-overlay-primary .uk-nav-default .uk-nav-sub li.uk-active > a, .uk-offcanvas-bar .uk-nav-default .uk-nav-sub li.uk-active > a {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 .uk-light .uk-nav-primary > li > a, .uk-section-primary:not(.uk-preserve-color) .uk-nav-primary > li > a, .uk-section-secondary:not(.uk-preserve-color) .uk-nav-primary > li > a, .uk-tile-primary:not(.uk-preserve-color) .uk-nav-primary > li > a, .uk-tile-secondary:not(.uk-preserve-color) .uk-nav-primary > li > a, .uk-card-primary.uk-card-body .uk-nav-primary > li > a, .uk-card-primary > :not([class*=uk-card-media]) .uk-nav-primary > li > a, .uk-card-secondary.uk-card-body .uk-nav-primary > li > a, .uk-card-secondary > :not([class*=uk-card-media]) .uk-nav-primary > li > a, .uk-overlay-primary .uk-nav-primary > li > a, .uk-offcanvas-bar .uk-nav-primary > li > a {
   color: rgba(254, 252, 247, 0.5);
@@ -12305,10 +12327,10 @@ iframe[data-uk-cover] {
   color: rgba(254, 252, 247, 0.7);
 }
 .uk-light .uk-nav-primary > li.uk-active > a, .uk-section-primary:not(.uk-preserve-color) .uk-nav-primary > li.uk-active > a, .uk-section-secondary:not(.uk-preserve-color) .uk-nav-primary > li.uk-active > a, .uk-tile-primary:not(.uk-preserve-color) .uk-nav-primary > li.uk-active > a, .uk-tile-secondary:not(.uk-preserve-color) .uk-nav-primary > li.uk-active > a, .uk-card-primary.uk-card-body .uk-nav-primary > li.uk-active > a, .uk-card-primary > :not([class*=uk-card-media]) .uk-nav-primary > li.uk-active > a, .uk-card-secondary.uk-card-body .uk-nav-primary > li.uk-active > a, .uk-card-secondary > :not([class*=uk-card-media]) .uk-nav-primary > li.uk-active > a, .uk-overlay-primary .uk-nav-primary > li.uk-active > a, .uk-offcanvas-bar .uk-nav-primary > li.uk-active > a {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 .uk-light .uk-nav-primary .uk-nav-header, .uk-section-primary:not(.uk-preserve-color) .uk-nav-primary .uk-nav-header, .uk-section-secondary:not(.uk-preserve-color) .uk-nav-primary .uk-nav-header, .uk-tile-primary:not(.uk-preserve-color) .uk-nav-primary .uk-nav-header, .uk-tile-secondary:not(.uk-preserve-color) .uk-nav-primary .uk-nav-header, .uk-card-primary.uk-card-body .uk-nav-primary .uk-nav-header, .uk-card-primary > :not([class*=uk-card-media]) .uk-nav-primary .uk-nav-header, .uk-card-secondary.uk-card-body .uk-nav-primary .uk-nav-header, .uk-card-secondary > :not([class*=uk-card-media]) .uk-nav-primary .uk-nav-header, .uk-overlay-primary .uk-nav-primary .uk-nav-header, .uk-offcanvas-bar .uk-nav-primary .uk-nav-header {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 .uk-light .uk-nav-primary .uk-nav-divider, .uk-section-primary:not(.uk-preserve-color) .uk-nav-primary .uk-nav-divider, .uk-section-secondary:not(.uk-preserve-color) .uk-nav-primary .uk-nav-divider, .uk-tile-primary:not(.uk-preserve-color) .uk-nav-primary .uk-nav-divider, .uk-tile-secondary:not(.uk-preserve-color) .uk-nav-primary .uk-nav-divider, .uk-card-primary.uk-card-body .uk-nav-primary .uk-nav-divider, .uk-card-primary > :not([class*=uk-card-media]) .uk-nav-primary .uk-nav-divider, .uk-card-secondary.uk-card-body .uk-nav-primary .uk-nav-divider, .uk-card-secondary > :not([class*=uk-card-media]) .uk-nav-primary .uk-nav-divider, .uk-overlay-primary .uk-nav-primary .uk-nav-divider, .uk-offcanvas-bar .uk-nav-primary .uk-nav-divider {
   border-top-color: rgba(254, 252, 247, 0.2);
@@ -12320,7 +12342,7 @@ iframe[data-uk-cover] {
   color: rgba(254, 252, 247, 0.7);
 }
 .uk-light .uk-nav-primary .uk-nav-sub li.uk-active > a, .uk-section-primary:not(.uk-preserve-color) .uk-nav-primary .uk-nav-sub li.uk-active > a, .uk-section-secondary:not(.uk-preserve-color) .uk-nav-primary .uk-nav-sub li.uk-active > a, .uk-tile-primary:not(.uk-preserve-color) .uk-nav-primary .uk-nav-sub li.uk-active > a, .uk-tile-secondary:not(.uk-preserve-color) .uk-nav-primary .uk-nav-sub li.uk-active > a, .uk-card-primary.uk-card-body .uk-nav-primary .uk-nav-sub li.uk-active > a, .uk-card-primary > :not([class*=uk-card-media]) .uk-nav-primary .uk-nav-sub li.uk-active > a, .uk-card-secondary.uk-card-body .uk-nav-primary .uk-nav-sub li.uk-active > a, .uk-card-secondary > :not([class*=uk-card-media]) .uk-nav-primary .uk-nav-sub li.uk-active > a, .uk-overlay-primary .uk-nav-primary .uk-nav-sub li.uk-active > a, .uk-offcanvas-bar .uk-nav-primary .uk-nav-sub li.uk-active > a {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 .uk-light .uk-nav.uk-nav-divider > :not(.uk-nav-divider) + :not(.uk-nav-header, .uk-nav-divider), .uk-section-primary:not(.uk-preserve-color) .uk-nav.uk-nav-divider > :not(.uk-nav-divider) + :not(.uk-nav-header, .uk-nav-divider), .uk-section-secondary:not(.uk-preserve-color) .uk-nav.uk-nav-divider > :not(.uk-nav-divider) + :not(.uk-nav-header, .uk-nav-divider), .uk-tile-primary:not(.uk-preserve-color) .uk-nav.uk-nav-divider > :not(.uk-nav-divider) + :not(.uk-nav-header, .uk-nav-divider), .uk-tile-secondary:not(.uk-preserve-color) .uk-nav.uk-nav-divider > :not(.uk-nav-divider) + :not(.uk-nav-header, .uk-nav-divider), .uk-card-primary.uk-card-body .uk-nav.uk-nav-divider > :not(.uk-nav-divider) + :not(.uk-nav-header, .uk-nav-divider), .uk-card-primary > :not([class*=uk-card-media]) .uk-nav.uk-nav-divider > :not(.uk-nav-divider) + :not(.uk-nav-header, .uk-nav-divider), .uk-card-secondary.uk-card-body .uk-nav.uk-nav-divider > :not(.uk-nav-divider) + :not(.uk-nav-header, .uk-nav-divider), .uk-card-secondary > :not([class*=uk-card-media]) .uk-nav.uk-nav-divider > :not(.uk-nav-divider) + :not(.uk-nav-header, .uk-nav-divider), .uk-overlay-primary .uk-nav.uk-nav-divider > :not(.uk-nav-divider) + :not(.uk-nav-header, .uk-nav-divider), .uk-offcanvas-bar .uk-nav.uk-nav-divider > :not(.uk-nav-divider) + :not(.uk-nav-header, .uk-nav-divider) {
   border-top-color: rgba(254, 252, 247, 0.2);
@@ -12343,10 +12365,10 @@ iframe[data-uk-cover] {
   color: rgba(254, 252, 247, 0.7);
 }
 .uk-light .uk-navbar-nav > li > a:active, .uk-section-primary:not(.uk-preserve-color) .uk-navbar-nav > li > a:active, .uk-section-secondary:not(.uk-preserve-color) .uk-navbar-nav > li > a:active, .uk-tile-primary:not(.uk-preserve-color) .uk-navbar-nav > li > a:active, .uk-tile-secondary:not(.uk-preserve-color) .uk-navbar-nav > li > a:active, .uk-card-primary.uk-card-body .uk-navbar-nav > li > a:active, .uk-card-primary > :not([class*=uk-card-media]) .uk-navbar-nav > li > a:active, .uk-card-secondary.uk-card-body .uk-navbar-nav > li > a:active, .uk-card-secondary > :not([class*=uk-card-media]) .uk-navbar-nav > li > a:active, .uk-overlay-primary .uk-navbar-nav > li > a:active, .uk-offcanvas-bar .uk-navbar-nav > li > a:active {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 .uk-light .uk-navbar-nav > li.uk-active > a, .uk-section-primary:not(.uk-preserve-color) .uk-navbar-nav > li.uk-active > a, .uk-section-secondary:not(.uk-preserve-color) .uk-navbar-nav > li.uk-active > a, .uk-tile-primary:not(.uk-preserve-color) .uk-navbar-nav > li.uk-active > a, .uk-tile-secondary:not(.uk-preserve-color) .uk-navbar-nav > li.uk-active > a, .uk-card-primary.uk-card-body .uk-navbar-nav > li.uk-active > a, .uk-card-primary > :not([class*=uk-card-media]) .uk-navbar-nav > li.uk-active > a, .uk-card-secondary.uk-card-body .uk-navbar-nav > li.uk-active > a, .uk-card-secondary > :not([class*=uk-card-media]) .uk-navbar-nav > li.uk-active > a, .uk-overlay-primary .uk-navbar-nav > li.uk-active > a, .uk-offcanvas-bar .uk-navbar-nav > li.uk-active > a {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 .uk-light .uk-navbar-item, .uk-section-primary:not(.uk-preserve-color) .uk-navbar-item, .uk-section-secondary:not(.uk-preserve-color) .uk-navbar-item, .uk-tile-primary:not(.uk-preserve-color) .uk-navbar-item, .uk-tile-secondary:not(.uk-preserve-color) .uk-navbar-item, .uk-card-primary.uk-card-body .uk-navbar-item, .uk-card-primary > :not([class*=uk-card-media]) .uk-navbar-item, .uk-card-secondary.uk-card-body .uk-navbar-item, .uk-card-secondary > :not([class*=uk-card-media]) .uk-navbar-item, .uk-overlay-primary .uk-navbar-item, .uk-offcanvas-bar .uk-navbar-item {
   color: rgba(254, 252, 247, 0.7);
@@ -12375,7 +12397,7 @@ iframe[data-uk-cover] {
   color: rgba(254, 252, 247, 0.7);
 }
 .uk-light .uk-subnav > .uk-active > a, .uk-section-primary:not(.uk-preserve-color) .uk-subnav > .uk-active > a, .uk-section-secondary:not(.uk-preserve-color) .uk-subnav > .uk-active > a, .uk-tile-primary:not(.uk-preserve-color) .uk-subnav > .uk-active > a, .uk-tile-secondary:not(.uk-preserve-color) .uk-subnav > .uk-active > a, .uk-card-primary.uk-card-body .uk-subnav > .uk-active > a, .uk-card-primary > :not([class*=uk-card-media]) .uk-subnav > .uk-active > a, .uk-card-secondary.uk-card-body .uk-subnav > .uk-active > a, .uk-card-secondary > :not([class*=uk-card-media]) .uk-subnav > .uk-active > a, .uk-overlay-primary .uk-subnav > .uk-active > a, .uk-offcanvas-bar .uk-subnav > .uk-active > a {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 .uk-light .uk-subnav-divider > :nth-child(n+2):not(.uk-first-column)::before, .uk-section-primary:not(.uk-preserve-color) .uk-subnav-divider > :nth-child(n+2):not(.uk-first-column)::before, .uk-section-secondary:not(.uk-preserve-color) .uk-subnav-divider > :nth-child(n+2):not(.uk-first-column)::before, .uk-tile-primary:not(.uk-preserve-color) .uk-subnav-divider > :nth-child(n+2):not(.uk-first-column)::before, .uk-tile-secondary:not(.uk-preserve-color) .uk-subnav-divider > :nth-child(n+2):not(.uk-first-column)::before, .uk-card-primary.uk-card-body .uk-subnav-divider > :nth-child(n+2):not(.uk-first-column)::before, .uk-card-primary > :not([class*=uk-card-media]) .uk-subnav-divider > :nth-child(n+2):not(.uk-first-column)::before, .uk-card-secondary.uk-card-body .uk-subnav-divider > :nth-child(n+2):not(.uk-first-column)::before, .uk-card-secondary > :not([class*=uk-card-media]) .uk-subnav-divider > :nth-child(n+2):not(.uk-first-column)::before, .uk-overlay-primary .uk-subnav-divider > :nth-child(n+2):not(.uk-first-column)::before, .uk-offcanvas-bar .uk-subnav-divider > :nth-child(n+2):not(.uk-first-column)::before {
   border-left-color: rgba(254, 252, 247, 0.2);
@@ -12393,8 +12415,8 @@ iframe[data-uk-cover] {
   color: rgba(254, 252, 247, 0.7);
 }
 .uk-light .uk-subnav-pill > .uk-active > a, .uk-section-primary:not(.uk-preserve-color) .uk-subnav-pill > .uk-active > a, .uk-section-secondary:not(.uk-preserve-color) .uk-subnav-pill > .uk-active > a, .uk-tile-primary:not(.uk-preserve-color) .uk-subnav-pill > .uk-active > a, .uk-tile-secondary:not(.uk-preserve-color) .uk-subnav-pill > .uk-active > a, .uk-card-primary.uk-card-body .uk-subnav-pill > .uk-active > a, .uk-card-primary > :not([class*=uk-card-media]) .uk-subnav-pill > .uk-active > a, .uk-card-secondary.uk-card-body .uk-subnav-pill > .uk-active > a, .uk-card-secondary > :not([class*=uk-card-media]) .uk-subnav-pill > .uk-active > a, .uk-overlay-primary .uk-subnav-pill > .uk-active > a, .uk-offcanvas-bar .uk-subnav-pill > .uk-active > a {
-  background-color: #FEFCF7;
-  color: #333D4B;
+  background-color: #fefcf7;
+  color: #333d4b;
 }
 .uk-light .uk-subnav > .uk-disabled > a, .uk-section-primary:not(.uk-preserve-color) .uk-subnav > .uk-disabled > a, .uk-section-secondary:not(.uk-preserve-color) .uk-subnav > .uk-disabled > a, .uk-tile-primary:not(.uk-preserve-color) .uk-subnav > .uk-disabled > a, .uk-tile-secondary:not(.uk-preserve-color) .uk-subnav > .uk-disabled > a, .uk-card-primary.uk-card-body .uk-subnav > .uk-disabled > a, .uk-card-primary > :not([class*=uk-card-media]) .uk-subnav > .uk-disabled > a, .uk-card-secondary.uk-card-body .uk-subnav > .uk-disabled > a, .uk-card-secondary > :not([class*=uk-card-media]) .uk-subnav > .uk-disabled > a, .uk-overlay-primary .uk-subnav > .uk-disabled > a, .uk-offcanvas-bar .uk-subnav > .uk-disabled > a {
   color: rgba(254, 252, 247, 0.5);
@@ -12433,8 +12455,8 @@ iframe[data-uk-cover] {
   color: rgba(254, 252, 247, 0.7);
 }
 .uk-light .uk-tab > .uk-active > a, .uk-section-primary:not(.uk-preserve-color) .uk-tab > .uk-active > a, .uk-section-secondary:not(.uk-preserve-color) .uk-tab > .uk-active > a, .uk-tile-primary:not(.uk-preserve-color) .uk-tab > .uk-active > a, .uk-tile-secondary:not(.uk-preserve-color) .uk-tab > .uk-active > a, .uk-card-primary.uk-card-body .uk-tab > .uk-active > a, .uk-card-primary > :not([class*=uk-card-media]) .uk-tab > .uk-active > a, .uk-card-secondary.uk-card-body .uk-tab > .uk-active > a, .uk-card-secondary > :not([class*=uk-card-media]) .uk-tab > .uk-active > a, .uk-overlay-primary .uk-tab > .uk-active > a, .uk-offcanvas-bar .uk-tab > .uk-active > a {
-  color: #FEFCF7;
-  border-color: #FEFCF7;
+  color: #fefcf7;
+  border-color: #fefcf7;
 }
 .uk-light .uk-tab > .uk-disabled > a, .uk-section-primary:not(.uk-preserve-color) .uk-tab > .uk-disabled > a, .uk-section-secondary:not(.uk-preserve-color) .uk-tab > .uk-disabled > a, .uk-tile-primary:not(.uk-preserve-color) .uk-tab > .uk-disabled > a, .uk-tile-secondary:not(.uk-preserve-color) .uk-tab > .uk-disabled > a, .uk-card-primary.uk-card-body .uk-tab > .uk-disabled > a, .uk-card-primary > :not([class*=uk-card-media]) .uk-tab > .uk-disabled > a, .uk-card-secondary.uk-card-body .uk-tab > .uk-disabled > a, .uk-card-secondary > :not([class*=uk-card-media]) .uk-tab > .uk-disabled > a, .uk-overlay-primary .uk-tab > .uk-disabled > a, .uk-offcanvas-bar .uk-tab > .uk-disabled > a {
   color: rgba(254, 252, 247, 0.5);
@@ -12489,13 +12511,13 @@ iframe[data-uk-cover] {
   color: rgba(254, 252, 247, 0.5) !important;
 }
 .uk-light .uk-text-emphasis, .uk-section-primary:not(.uk-preserve-color) .uk-text-emphasis, .uk-section-secondary:not(.uk-preserve-color) .uk-text-emphasis, .uk-tile-primary:not(.uk-preserve-color) .uk-text-emphasis, .uk-tile-secondary:not(.uk-preserve-color) .uk-text-emphasis, .uk-card-primary.uk-card-body .uk-text-emphasis, .uk-card-primary > :not([class*=uk-card-media]) .uk-text-emphasis, .uk-card-secondary.uk-card-body .uk-text-emphasis, .uk-card-secondary > :not([class*=uk-card-media]) .uk-text-emphasis, .uk-overlay-primary .uk-text-emphasis, .uk-offcanvas-bar .uk-text-emphasis {
-  color: #FEFCF7 !important;
+  color: #fefcf7 !important;
 }
 .uk-light .uk-text-primary, .uk-section-primary:not(.uk-preserve-color) .uk-text-primary, .uk-section-secondary:not(.uk-preserve-color) .uk-text-primary, .uk-tile-primary:not(.uk-preserve-color) .uk-text-primary, .uk-tile-secondary:not(.uk-preserve-color) .uk-text-primary, .uk-card-primary.uk-card-body .uk-text-primary, .uk-card-primary > :not([class*=uk-card-media]) .uk-text-primary, .uk-card-secondary.uk-card-body .uk-text-primary, .uk-card-secondary > :not([class*=uk-card-media]) .uk-text-primary, .uk-overlay-primary .uk-text-primary, .uk-offcanvas-bar .uk-text-primary {
-  color: #FEFCF7 !important;
+  color: #fefcf7 !important;
 }
 .uk-light .uk-text-secondary, .uk-section-primary:not(.uk-preserve-color) .uk-text-secondary, .uk-section-secondary:not(.uk-preserve-color) .uk-text-secondary, .uk-tile-primary:not(.uk-preserve-color) .uk-text-secondary, .uk-tile-secondary:not(.uk-preserve-color) .uk-text-secondary, .uk-card-primary.uk-card-body .uk-text-secondary, .uk-card-primary > :not([class*=uk-card-media]) .uk-text-secondary, .uk-card-secondary.uk-card-body .uk-text-secondary, .uk-card-secondary > :not([class*=uk-card-media]) .uk-text-secondary, .uk-overlay-primary .uk-text-secondary, .uk-offcanvas-bar .uk-text-secondary {
-  color: #FEFCF7 !important;
+  color: #fefcf7 !important;
 }
 .uk-light .uk-column-divider, .uk-section-primary:not(.uk-preserve-color) .uk-column-divider, .uk-section-secondary:not(.uk-preserve-color) .uk-column-divider, .uk-tile-primary:not(.uk-preserve-color) .uk-column-divider, .uk-tile-secondary:not(.uk-preserve-color) .uk-column-divider, .uk-card-primary.uk-card-body .uk-column-divider, .uk-card-primary > :not([class*=uk-card-media]) .uk-column-divider, .uk-card-secondary.uk-card-body .uk-column-divider, .uk-card-secondary > :not([class*=uk-card-media]) .uk-column-divider, .uk-overlay-primary .uk-column-divider, .uk-offcanvas-bar .uk-column-divider {
   -webkit-column-rule-color: rgba(254, 252, 247, 0.2);
@@ -12503,10 +12525,10 @@ iframe[data-uk-cover] {
           column-rule-color: rgba(254, 252, 247, 0.2);
 }
 .uk-light .uk-logo, .uk-section-primary:not(.uk-preserve-color) .uk-logo, .uk-section-secondary:not(.uk-preserve-color) .uk-logo, .uk-tile-primary:not(.uk-preserve-color) .uk-logo, .uk-tile-secondary:not(.uk-preserve-color) .uk-logo, .uk-card-primary.uk-card-body .uk-logo, .uk-card-primary > :not([class*=uk-card-media]) .uk-logo, .uk-card-secondary.uk-card-body .uk-logo, .uk-card-secondary > :not([class*=uk-card-media]) .uk-logo, .uk-overlay-primary .uk-logo, .uk-offcanvas-bar .uk-logo {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 .uk-light .uk-logo:hover, .uk-section-primary:not(.uk-preserve-color) .uk-logo:hover, .uk-section-secondary:not(.uk-preserve-color) .uk-logo:hover, .uk-tile-primary:not(.uk-preserve-color) .uk-logo:hover, .uk-tile-secondary:not(.uk-preserve-color) .uk-logo:hover, .uk-card-primary.uk-card-body .uk-logo:hover, .uk-card-primary > :not([class*=uk-card-media]) .uk-logo:hover, .uk-card-secondary.uk-card-body .uk-logo:hover, .uk-card-secondary > :not([class*=uk-card-media]) .uk-logo:hover, .uk-overlay-primary .uk-logo:hover, .uk-offcanvas-bar .uk-logo:hover {
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 .uk-light .uk-logo > :not(.uk-logo-inverse):not(:only-of-type), .uk-section-primary:not(.uk-preserve-color) .uk-logo > :not(.uk-logo-inverse):not(:only-of-type), .uk-section-secondary:not(.uk-preserve-color) .uk-logo > :not(.uk-logo-inverse):not(:only-of-type), .uk-tile-primary:not(.uk-preserve-color) .uk-logo > :not(.uk-logo-inverse):not(:only-of-type), .uk-tile-secondary:not(.uk-preserve-color) .uk-logo > :not(.uk-logo-inverse):not(:only-of-type), .uk-card-primary.uk-card-body .uk-logo > :not(.uk-logo-inverse):not(:only-of-type), .uk-card-primary > :not([class*=uk-card-media]) .uk-logo > :not(.uk-logo-inverse):not(:only-of-type), .uk-card-secondary.uk-card-body .uk-logo > :not(.uk-logo-inverse):not(:only-of-type), .uk-card-secondary > :not([class*=uk-card-media]) .uk-logo > :not(.uk-logo-inverse):not(:only-of-type), .uk-overlay-primary .uk-logo > :not(.uk-logo-inverse):not(:only-of-type), .uk-offcanvas-bar .uk-logo > :not(.uk-logo-inverse):not(:only-of-type) {
   display: none;
