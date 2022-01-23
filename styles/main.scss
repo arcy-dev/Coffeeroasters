@@ -25,20 +25,6 @@
   border-radius: 8px;
 }
 
-/* Phone landscape and smaller */
-@media (max-width: $breakpoint-small) {
-  .hero-banner {
-    background-image: url(../assets/plan/mobile/image-hero-blackcup.jpg);
-  }
-}
-
-/* Tablet landscape and smaller */
-@media (max-width: $breakpoint-medium) {
-  .hero-banner {
-    background-image: url(../assets/plan/tablet/image-hero-blackcup.jpg);
-  }
-}
-
 #orderSummary {
   border-radius: 8px;
   span {
@@ -61,7 +47,17 @@
     color: $grey;
   }
 }
+@media (max-width: $breakpoint-medium) {
+  .hero-banner {
+    background-image: url(../assets/plan/tablet/image-hero-blackcup.jpg);
+  }
+}
 
+@media (max-width: $breakpoint-small) {
+  .hero-banner {
+    background-image: url(../assets/plan/mobile/image-hero-blackcup.jpg);
+  }
+}
 // 2. Import default variables and available mixins.
 @import './scss/variables-theme.scss';
 @import './scss/mixins-theme.scss';

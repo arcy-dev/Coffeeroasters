@@ -82,18 +82,6 @@ body {
   border-radius: 8px;
 }
 
-/* Phone landscape and smaller */
-@media (max-width: 640px) {
-  .hero-banner {
-    background-image: url(../assets/plan/mobile/image-hero-blackcup.jpg);
-  }
-}
-/* Tablet landscape and smaller */
-@media (max-width: 960px) {
-  .hero-banner {
-    background-image: url(../assets/plan/tablet/image-hero-blackcup.jpg);
-  }
-}
 #orderSummary {
   border-radius: 8px;
 }
@@ -116,6 +104,16 @@ body {
   color: #83888f;
 }
 
+@media (max-width: 960px) {
+  .hero-banner {
+    background-image: url(../assets/plan/tablet/image-hero-blackcup.jpg);
+  }
+}
+@media (max-width: 640px) {
+  .hero-banner {
+    background-image: url(../assets/plan/mobile/image-hero-blackcup.jpg);
+  }
+}
 /* ========================================================================
    Component: Base
  ========================================================================== */
