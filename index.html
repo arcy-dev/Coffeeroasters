@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css" />
+
+  <title>Create a Plan</title>
+</head>
+
+<body>
+  <div class="uk-section uk-padding-remove-vertical">
+    <div class="uk-container">
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+        <div class="uk-navbar-left">
+
+          <ul class="uk-navbar-nav">
+            <li class="uk-active">
+              <a href="#">
+                <img src="assets/shared/desktop/logo.svg" alt=" coffeeroasters">
+              </a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+
+  <div class="uk-section uk-light">
+    <div class="uk-container hero-banner">
+      <div class="uk-width-1-2@m" uk-grid>
+        <h1>Create a plan</h1>
+        <p>Build a subscription plan that best fits your needs. We offer an assortment of the best artisan coffees from
+          around the globe delivered fresh to your door.</p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="uk-section uk-light">
+    <div class="uk-container uk-background-secondary uk-padding bg-texture">
+      <div class="uk-child-width-1-3@m  uk-grid-match" uk-grid>
+        <div>
+          <div class="uk-card uk-card-body">
+            <h4 class="uk-h2">01</h4>
+            <h3 class="uk-card-title">Pick your coffee</h3>
+            <p>Select from our evolving range of artisan coffees. Our beans are ethically
+              sourced and we pay fair prices for them. There are new coffees in all profiles
+              every month for you to try out.</p>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-body">
+            <h4 class="uk-h2">02</h4>
+            <h3 class="uk-card-title">Choose the frequency</h3>
+            <p>Customize your order frequency, quantity, even your roast style and grind type.
+              Pause, skip or cancel your subscription with no commitment through our online portal.</p>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-body">
+            <h4 class="uk-h2">03</h4>
+            <h3 class="uk-card-title">Receive and enjoy!</h3>
+            <p> We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning
+              world-class coffees curated to provide a distinct tasting experience.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="uk-section">
+    <div class="uk-container">
+      <div class="uk-child-width-expand uk-grid-large" uk-grid>
+        <!-- SIDE NAV -->
+        <div class="uk-width-1-4@m uk-visible@m">
+          <ul class="uk-nav uk-nav-primary uk-sticky" uk-scrollspy-nav="closest: li; scroll: true"
+            uk-sticky="bottom: true">
+            <li><a href="#preferences"><span>01</span> Preferences</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#beanType"><span>02</span> Bean type</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#quantity"><span>03</span> Quantity</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#grindOption"><span>04</span> Grind option</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#deliveries"><span>05</span> Deliveries</a></li>
+          </ul>
+        </div>
+
+        <!-- OPTIONS -->
+        <div>
+          <ul uk-accordion="multiple: true">
+
+            <li class="uk-open" id="preferences">
+              <a class="uk-accordion-title" href="#">
+                <h3>How do you drink your coffee?</h3>
+              </a>
+              <div class="uk-accordion-content">
+                <div class="uk-child-width-1-3@m uk-grid-large uk-grid-match" uk-grid>
+                  <div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                      <h4 class="uk-card-title">Capsule</h3>
+                        <p>Compatible with Nespresso systems and similar brewers</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                      <h4 class="uk-card-title">Filter</h4>
+                      <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                      <h4 class="uk-card-title">Espresso</h4>
+                      <p>Dense and finely ground beans for an intense, flavorful experience</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+            <li id="beanType">
+              <a class="uk-accordion-title" href="#">
+                <h3>What type of coffee?</h3>
+              </a>
+              <div class="uk-accordion-content">
+
+                <div class="uk-child-width-1-3@m uk-grid-large uk-grid-match" uk-grid>
+                  <div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                      <h4 class="uk-card-title">Single origin</h3>
+                        <p> Distinct, high quality coffee from a specific family-owned farm</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                      <h4 class="uk-card-title">Decaf</h4>
+                      <p>Just like regular coffee, except the caffeine has been removed</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                      <h4 class="uk-card-title">Blended</h4>
+                      <p>Combination of two or three dark roasted beans of organic coffee</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+            <li id="quantity">
+              <a class="uk-accordion-title" href="#">
+                <h3>How much would you like?</h3>
+              </a>
+              <div class="uk-accordion-content">
+
+                <div class="uk-child-width-1-3@m uk-grid-large uk-grid-match" uk-grid>
+                  <div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                      <h4 class="uk-card-title">250g</h3>
+                        <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                      <h4 class="uk-card-title">500g</h4>
+                      <p>Perfect option for a couple. Yields about 40 delectable cups.</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                      <h4 class="uk-card-title">1000g</h4>
+                      <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+            <li id="grindOption">
+              <a class="uk-accordion-title" href="#">
+                <h3>Want us to grind them?</h3>
+              </a>
+              <div class="uk-accordion-content">
+
+                <div class="uk-child-width-1-3@m uk-grid-large uk-grid-match" uk-grid>
+                  <div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                      <h4 class="uk-card-title">Wholebean</h3>
+                        <p>Best choice if you cherish the full sensory experience</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                      <h4 class="uk-card-title">Filter</h4>
+                      <p>For drip or pour-over coffee methods such as V60 or Aeropress.</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                      <h4 class="uk-card-title">Cafetiére</h4>
+                      <p>Course ground beans specially suited for french press coffee.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li id="deliveries">
+              <a class="uk-accordion-title" href="#">
+                <h3>How often should we deliver?</h3>
+              </a>
+              <div class="uk-accordion-content">
+                <div class="uk-child-width-1-3@m uk-grid-large uk-grid-match" uk-grid>
+                  <div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                      <h4 class="uk-card-title">Every week</h3>
+                        <p>$14.00 per shipment. Includes free first-class shipping.</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                      <h4 class="uk-card-title">Every 2 weeks</h4>
+                      <p>$17.25 per shipment. Includes free priority shipping.</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                      <h4 class="uk-card-title">Every month</h4>
+                      <p>$22.50 per shipment. Includes free priority shipping.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <!-- ORDER SUMMARY -->
+
+          <div id="orderSummary" class="uk-container-small uk-margin-large-top uk-padding uk-light uk-background-secondary">
+
+            <p class="uk-text-meta uk-text-uppercase">Order Summary</p>
+            <p class="uk-h4 ">
+              “I drink my coffee as ______, with a ______ type of bean. ______ ground ala ______, sent to me _______.”
+            </p>
+
+          </div>
+
+          <div class="uk-container uk-margin-medium-top uk-flex uk-flex-right@m">
+            <button href="#modal-sections" class="uk-button uk-button-default uk-h4" uk-toggle>Create my plan!</button>
+ <!-- Modal -->
+            <div id="modal-sections" uk-modal>
+              <div class="uk-modal-dialog">
+                  <button class="uk-modal-close-default" type="button" uk-close></button>
+                  <div class="uk-modal-header">
+                      <h2 class="uk-modal-title">Order Summary</h2>
+                  </div>
+                  <div class="uk-modal-body">
+                      <p>
+                        “I drink coffee _____, with a _____ type of bean. _____ ground ala _____, sent to me _____.”
+                      </p>
+                      <p>
+                        Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout.
+                      </p>
+                  </div>
+                  <div class="uk-modal-footer uk-text-right">
+                    <div class="total-price">$_____/month</div>
+                      <button class="uk-button uk-button-default uk-modal-close uk-h4" type="button">Checkout</button>
+                     
+                  </div>
+              </div>
+          </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <script src="js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit-icons.min.js"></script>
+</body>
+
+</html>

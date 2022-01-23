@@ -1,0 +1,141 @@
+//
+// Component: Base
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+$base-heading-font-family:                       $second-font-family !important;
+$base-heading-font-weight:                       900 !default;
+$base-heading-color:                             $global-emphasis-color !default;
+
+$base-h1-font-size-m:                            4.5rem;
+$base-h1-font-size:                              $base-h1-font-size-m * .65 !default;
+$base-h1-line-height:                            1.2 !default;
+$base-h2-font-size-m:                            $global-2xlarge-font-size !default;
+$base-h2-font-size:                              $base-h2-font-size-m * 0.85 !default;
+$base-h2-line-height:                            1.3 !default;
+$base-h3-font-size:                              $global-xlarge-font-size !default;
+$base-h3-line-height:                            1.4 !default;
+$base-h4-font-size:                              $global-large-font-size !default;
+$base-h4-line-height:                            1.4 !default;
+$base-h5-font-size:                              $global-font-size !default;
+$base-h5-line-height:                            1.4 !default;
+$base-h6-font-size:                              $global-small-font-size !default;
+$base-h6-line-height:                            1.4 !default;
+
+
+//
+// New
+//
+
+$base-code-padding-horizontal:                   6px !default;
+$base-code-padding-vertical:                     2px !default;
+$base-code-background:                           $global-muted-background !default;
+
+$base-blockquote-color:                          $global-emphasis-color !default;
+
+$base-blockquote-footer-color:                   $global-color !default;
+
+$base-pre-padding:                               10px !default;
+$base-pre-background:                            $global-background !default;
+$base-pre-border-width:                          $global-border-width !default;
+$base-pre-border:                                $global-border !default;
+$base-pre-border-radius:                         3px !default;
+
+
+
+
+// Body
+// ========================================================================
+
+body {
+    background-color: $light-cream;
+}
+// @mixin hook-base-body(){}
+
+
+// Links
+// ========================================================================
+
+// @mixin hook-base-link(){}
+
+// @mixin hook-base-link-hover(){}
+
+
+// Text-level semantics
+// ========================================================================
+
+
+
+
+// Headings
+// ========================================================================
+
+// @mixin hook-base-heading(){}
+
+// @mixin hook-base-h1(){}
+
+// @mixin hook-base-h2(){}
+
+// @mixin hook-base-h3(){}
+
+// @mixin hook-base-h4(){}
+
+// @mixin hook-base-h5(){}
+
+// @mixin hook-base-h6(){}
+
+
+// Horizontal rules
+// ========================================================================
+
+// @mixin hook-base-hr(){}
+
+
+// Blockquotes
+// ========================================================================
+
+
+
+
+
+
+// Preformatted text
+// ========================================================================
+
+
+
+
+// Miscellaneous
+// ========================================================================
+
+// @mixin hook-base-misc(){}
+
+
+// Inverse
+// ========================================================================
+
+// $inverse-base-blockquote-color:                 $inverse-global-emphasis-color !default;
+// $inverse-base-blockquote-footer-color:          $inverse-global-color !default;
+
+// @mixin hook-inverse-base-link(){}
+// @mixin hook-inverse-base-link-hover(){}
+
+
+
+// @mixin hook-inverse-base-heading(){}
+
+// @mixin hook-inverse-base-h1(){}
+// @mixin hook-inverse-base-h2(){}
+// @mixin hook-inverse-base-h3(){}
+// @mixin hook-inverse-base-h4(){}
+// @mixin hook-inverse-base-h5(){}
+// @mixin hook-inverse-base-h6(){}
+
+
+
+
+// @mixin hook-inverse-base-hr(){}

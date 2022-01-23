@@ -1,0 +1,142 @@
+//
+// Component: Card
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+$card-hover-background:                         $global-background !default;
+
+$card-default-background:                       #F4F1EB;
+$card-default-hover-background:                 #FDD6BA !default;
+
+
+
+//
+// New
+//
+
+$card-badge-border-radius:                      2px !default;
+$card-badge-text-transform:                     uppercase !default;
+
+$card-hover-box-shadow:                         $global-large-box-shadow !default;
+
+$card-default-box-shadow:                       none;
+$card-default-hover-box-shadow:                 none;
+
+$card-default-header-border-width:              $global-border-width !default;
+$card-default-header-border:                    $global-border !default;
+
+$card-default-footer-border-width:              $global-border-width !default;
+$card-default-footer-border:                    $global-border !default;
+
+// $card-primary-box-shadow:                       $global-medium-box-shadow !default;
+// $card-primary-hover-box-shadow:                 $global-large-box-shadow !default;
+
+// $card-secondary-box-shadow:                     $global-medium-box-shadow !default;
+// $card-secondary-hover-box-shadow:               $global-large-box-shadow !default;
+
+
+// Component
+// ========================================================================
+
+
+
+// Sections
+// ========================================================================
+
+// @mixin hook-card-body(){}
+
+// @mixin hook-card-header(){}
+
+// @mixin hook-card-footer(){}
+
+
+// Media
+// ========================================================================
+
+// @mixin hook-card-media(){}
+
+// @mixin hook-card-media-top(){}
+
+// @mixin hook-card-media-bottom(){}
+
+// @mixin hook-card-media-left(){}
+
+// @mixin hook-card-media-right(){}
+
+
+// Title
+// ========================================================================
+
+// @mixin hook-card-title(){}
+
+
+// Badge
+// ========================================================================
+
+
+
+
+// Hover modifier
+// ========================================================================
+
+
+
+
+// Style modifiers
+// ========================================================================
+.uk-card-default {
+    background-color: $card-default-background;
+    border-radius: 8px;
+}
+
+
+
+
+.uk-card-default.uk-card-hover:hover {
+    background-color: $card-default-hover-background;
+}
+.uk-card-default:active, .uk-card-default .active  {
+    background-color: $dark-cyan !important;
+    color: $light-cream;
+    .uk-card-title {
+        color: $light-cream;
+    }
+}
+
+
+// @mixin hook-card-default-title(){}
+
+
+
+
+
+
+
+//
+// Primary
+//
+
+
+
+// @mixin hook-card-primary-title(){}
+
+
+
+//
+// Secondary
+//
+
+
+
+// @mixin hook-card-secondary-title(){}
+
+
+
+
+// Miscellaneous
+// ========================================================================
+

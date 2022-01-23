@@ -1,2 +1,1 @@
-# Coffeeroasters
-Coffeeroasters subscription site challenge hub
+**Coffeeroasters subscription site**

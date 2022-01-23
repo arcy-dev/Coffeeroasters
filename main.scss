@@ -1,0 +1,41 @@
+// 1. Your custom variables and variable overwrites.
+@import "theme/variables.scss";
+@import "theme/base.scss";
+
+// elements 
+@import "theme/button.scss";
+
+// layout
+@import "theme/container.scss";
+@import "theme/card.scss";
+
+// Navs
+@import "theme/nav.scss";
+
+$global-link-color: #DA7D02;
+
+
+.hero-banner {
+    background-image: url(assets/plan/desktop/image-hero-blackcup.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 80px 40px;
+    border-radius: 8px;
+}
+
+#orderSummary {
+    border-radius: 8px;
+}
+
+// 2. Import default variables and available mixins.
+@import "uikit/src/scss/variables-theme.scss";
+@import "uikit/src/scss/mixins-theme.scss";
+
+// 3. Your custom mixin overwrites.
+
+
+// 4. Import UIkit.
+@import "uikit/src/scss/uikit-theme.scss";
