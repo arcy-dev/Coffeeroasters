@@ -99,7 +99,7 @@ $card-default-footer-border:                    $global-border !default;
 .uk-card-default.uk-card-hover:hover {
     background-color: $card-default-hover-background;
 }
-.uk-card-default:active, .uk-card-default .active  {
+.uk-card-default:active, .uk-card-default.active  {
     background-color: $dark-cyan !important;
     color: $light-cream;
     .uk-card-title {

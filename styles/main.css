@@ -28,11 +28,11 @@ body {
   background-color: #FDD6BA;
 }
 
-.uk-card-default:active, .uk-card-default .active {
+.uk-card-default:active, .uk-card-default.active {
   background-color: #0E8784 !important;
   color: #FEFCF7;
 }
-.uk-card-default:active .uk-card-title, .uk-card-default .active .uk-card-title {
+.uk-card-default:active .uk-card-title, .uk-card-default.active .uk-card-title {
   color: #FEFCF7;
 }
 
@@ -49,7 +49,7 @@ body {
 }
 
 .hero-banner {
-  background-image: url(assets/plan/desktop/image-hero-blackcup.jpg);
+  background-image: url(../assets/plan/desktop/image-hero-blackcup.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -103,7 +103,7 @@ body {
  */
 a,
 .uk-link {
-  color: #DA7D02;
+  color: #da7d02;
   text-decoration: none;
   cursor: pointer;
 }
