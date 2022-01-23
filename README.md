@@ -1,4 +1,4 @@
-**Coffeeroasters subscription service page**
+# Coffeeroasters subscription service page
 
 Build a coffee subscription service landing page in one day to showcase
 
