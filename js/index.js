@@ -1,13 +1,19 @@
+// Selects the row of cards based on ID
 function cardSelector(id) {
+  // Creates an array of the cards within the row
   const cardGroup = document.querySelectorAll(`#${id} .uk-card-default`);
 
   cardGroup.forEach((card, index) => {
     card.addEventListener('click', () => {
+      // loops through cards in the row to remove all active classes
       cardGroup.forEach((c) => {
         c.classList.remove('active');
       });
+
+      // adds the active class to clicked card
       card.classList.add('active');
 
+      // Puts card title into order summary
       if (id === 'preferences') {
         const preferencesRequest = document.querySelector(`#${id} .uk-card.active h4`).innerText;
         const preferencesResult = document.querySelectorAll('.preferencesResult');
@@ -31,10 +37,11 @@ function cardSelector(id) {
       } else if (id === 'deliveries') {
         const deliveriesRequest = document.querySelector(`#${id} .uk-card.active h4`).innerText;
         const deliveriesResult = document.querySelectorAll('.deliveriesResult');
-        const priceArr = [14, 17.25, 22.5];
-        let totalCost = document.querySelector('.totalCost');
         deliveriesResult[0].innerText = deliveriesRequest;
         deliveriesResult[1].innerText = deliveriesRequest;
+
+        const priceArr = ['14.00', '17.25', '22.50'];
+        let totalCost = document.querySelector('.totalCost');
         totalCost.innerText = priceArr[index];
       }
 
